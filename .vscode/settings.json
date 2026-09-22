@@ -1,0 +1,10 @@
+{
+    "files.watcherInclude": [
+        "**/.agent/**"
+    ],
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv313/Scripts/python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ],
+    "python.terminal.useEnvFile": true
+}

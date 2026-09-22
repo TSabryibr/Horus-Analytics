@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Council Verdict — Horus Replay Report (2026-07-22)</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-blue: #38bdf8;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --accent-amber: #f59e0b;
+            --accent-purple: #a855f7;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: rgba(56, 189, 248, 0.15);
+            color: var(--accent-blue);
+            margin-bottom: 10px;
+        }
+        h1 { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 10px; }
+        .subtitle { color: var(--text-muted); font-size: 1rem; }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+        .metric-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+        }
+        .metric-val { font-size: 1.6rem; font-weight: 800; margin-top: 5px; }
+        .metric-label { font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .val-green { color: var(--accent-green); }
+        .val-blue { color: var(--accent-blue); }
+        .val-amber { color: var(--accent-amber); }
+        .val-red { color: var(--accent-red); }
+
+        .section-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+        }
+
+        .verdict-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-left: 4px solid var(--accent-blue);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+        }
+        .verdict-box h3 { color: var(--accent-blue); margin-bottom: 8px; font-size: 1.1rem; }
+
+        .one-thing-box {
+            background: rgba(34, 197, 94, 0.1);
+            border: 1px solid var(--accent-green);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+        .one-thing-box h3 { color: var(--accent-green); font-size: 1.2rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+
+        .advisor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .advisor-stance {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .advisor-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+        .advisor-tag { font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; display: inline-block; font-weight: 600; margin-bottom: 8px; }
+        .tag-red { background: rgba(239, 68, 68, 0.2); color: var(--accent-red); }
+        .tag-blue { background: rgba(56, 189, 248, 0.2); color: var(--accent-blue); }
+        .tag-green { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .tag-amber { background: rgba(245, 158, 11, 0.2); color: var(--accent-amber); }
+        .tag-purple { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+
+        details {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        summary {
+            padding: 16px 20px;
+            font-weight: 700;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary:hover { background: rgba(255, 255, 255, 0.03); }
+        .details-content { padding: 20px; border-top: 1px solid var(--border); color: #cbd5e1; font-size: 0.95rem; }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 40px;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">LLM Council Report</span>
+            <h1>Horus Replay Report — Council Verdict</h1>
+            <p class="subtitle">Subject: Replay Export <code>Horus_Replay_20260722_20260726_022815.xlsx</code> | Simulated Date: 2026-07-22 (EGX30)</p>
+        </header>
+
+        <!-- KPI Metrics Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Net Realized PnL</div>
+                <div class="metric-val val-green">+126,603.87 EGP</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Profit Factor</div>
+                <div class="metric-val val-blue">2.82</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Closed Win Rate</div>
+                <div class="metric-val val-amber">42.3%</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Executed Trades</div>
+                <div class="metric-val">123</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">REPLAY_END Closes</div>
+                <div class="metric-val val-red">65 (52.8%)</div>
+            </div>
+        </div>
+
+        <!-- Chairman Synthesis Section -->
+        <div class="section-card">
+            <div class="section-title">👑 Chairman's Synthesis & Final Verdict</div>
+
+            <div class="verdict-box">
+                <h3>🤝 Where the Council Agrees</h3>
+                <p>The council unanimously agrees that the <strong>Horus Core signal engine possesses genuine momentum alpha</strong>. Pure target hits (<code>TARGET_2</code>) generated <strong>+126,020.51 EGP</strong> with a 55.1% win rate on completed trades. However, <strong>52.8% of trades (65/123) were forcibly liquidated at session close (<code>REPLAY_END</code>)</strong>, contributing +48.4k EGP (38.2% of net profit). This creates a dangerous mirage of zero-cost liquidity that will fail under real market conditions.</p>
+            </div>
+
+            <div class="verdict-box" style="border-left-color: var(--accent-amber);">
+                <h3 style="color: var(--accent-amber);">⚔️ Where the Council Clashes</h3>
+                <p><strong>Overnight Swing Holding vs. Strict Intraday Liquidation:</strong> The Expansionist argues that force-closing positions at 14:30 cuts massive multi-day runners short (e.g. BIOC +58%, AFMC +34%). Conversely, The Contrarian and Outsider stress that holding 65 open EGX stocks overnight introduces unmanaged gap-down risk, T+2 settlement lockups, and margin stress. Resolution: Maintain strict intraday exits, but protect intraday runners with trailing stops while eliminating late-session entry clutter.</p>
+            </div>
+
+            <div class="verdict-box" style="border-left-color: var(--accent-purple);">
+                <h3 style="color: var(--accent-purple);">👁️ Blind Spots Caught in Peer Review</h3>
+                <ul style="margin-left: 20px; margin-top: 5px;">
+                    <li><strong>Micro-Share Trades:</strong> Sizing formulas produced absurd orders like 3 shares of INFI or 7 shares of UEFM, which minimum broker commission fees will decimate.</li>
+                    <li><strong>Late-Session Entry Clutter:</strong> 20+ trades were opened after 13:00 PM, giving positions less than 90 minutes to hit targets and forcing <code>REPLAY_END</code> exits.</li>
+                    <li><strong>Friction Ingestion:</strong> The replay assumed 0% slippage and 0% commission.</li>
+                </ul>
+            </div>
+
+            <div class="verdict-box" style="border-left-color: var(--accent-green);">
+                <h3 style="color: var(--accent-green);">📋 The Final Recommendation</h3>
+                <p><strong>Do NOT deploy to live capital in its current state.</strong> Implement 3 mandatory execution guardrails in <code>saved_settings.json</code>: (1) Inject 0.30% roundtrip transaction cost + 0.10% slippage; (2) Enforce a 12:30 PM entry cutoff & cap concurrent positions at 10 max; (3) Filter out trades under 5,000 EGP notional value.</p>
+            </div>
+
+            <div class="one-thing-box">
+                <h3>⚡ The One Thing to Do First</h3>
+                <p><strong>Add a <code>12:30 PM Entry Cutoff</code> and <code>Max 10 Concurrent Positions</code> filter in Horus Replay settings, then re-run the 2026-07-22 replay to benchmark sanitized net PnL.</strong></p>
+            </div>
+        </div>
+
+        <!-- Advisor Positions Overview -->
+        <div class="section-card">
+            <div class="section-title">🏛️ Advisor Stance Alignment Matrix</div>
+            <div class="advisor-grid">
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Contrarian</div>
+                    <span class="advisor-tag tag-red">CRITICAL WARN</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Flags 52.8% REPLAY_END reliance and top-2 winner concentration (+55.5k EGP) as high-risk overfit.</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">First Principles</div>
+                    <span class="advisor-tag tag-purple">DECONSTRUCT</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Isolates +78.2k EGP net profit on completed TP2 vs SL trades, proving underlying signal edge.</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Expansionist</div>
+                    <span class="advisor-tag tag-green">BULLISH SCALE</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Highlights 2.54x payoff ratio and huge runners (BIOC +58%), advocating multi-day swing holding.</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Outsider</div>
+                    <span class="advisor-tag tag-amber">REALITY CHECK</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Calls out 123 trades/day as humanly impossible and exposes micro-share sizing (3 shares INFI).</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Executor</div>
+                    <span class="advisor-tag tag-blue">ACTION PLAN</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Provides 4 specific config parameters (12:30 cutoff, 5k EGP min order, friction model) for immediate fix.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Advisor Details (Collapsible) -->
+        <div class="section-card">
+            <div class="section-title">📜 Individual Advisor Sub-Agent Briefings</div>
+
+            <details>
+                <summary>
+                    <span>1. The Contrarian — Vulnerability & Risk Analysis</span>
+                    <span class="advisor-tag tag-red">View Analysis</span>
+                </summary>
+                <div class="details-content">
+                    <p><strong>Verdict: High Danger of Mirage Alpha & Structural Overfit</strong></p>
+                    <br>
+                    <p>This replay report looks superficially impressive with +126.6k EGP and a 2.82 Profit Factor, but under severe scrutiny, it exposes critical operational and quantitative flaws that will destroy capital in live trading:</p>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>The REPLAY_END Illusion (52.8% Unfinished Trades):</strong> Over half of all executed trades (65 out of 123) never reached a natural exit before 14:30. They were arbitrarily liquidated at <code>REPLAY_END</code>, contributing +48.4k EGP (38.2% of net profit). In live trading, holding 65 open positions overnight exposes the account to massive gap-down risk.</li>
+                        <li><strong>Extreme Outlier Dependence:</strong> Just 2 trades (RUBX and BIOC) generated 43.9% of total net profits (+55.6k EGP). BIOC alone gained 58% and was marked at market close without a target hit.</li>
+                        <li><strong>Execution Hyperactivity (123 Trades in 4.5 Hours):</strong> Triggering 1 trade every 2.2 minutes in illiquid EGX30 stocks will suffer massive bid-ask spreads and broker commissions.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span>2. The First Principles Thinker — Signal Physics Deconstruction</span>
+                    <span class="advisor-tag tag-purple">View Analysis</span>
+                </summary>
+                <div class="details-content">
+                    <p><strong>Verdict: Re-evaluate Signal Edge vs Session Boundary Artifact</strong></p>
+                    <br>
+                    <p>Stripping away vanity metrics to isolate underlying market physics:</p>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Completed Trades Hold Solid Edge:</strong> 27 <code>TARGET_2</code> wins (+126.0k EGP) vs 22 <code>STOP_LOSS</code> hits (-47.8k EGP) yield a natural net profit of <strong>+78,189.46 EGP</strong> across completed trades (55.1% win rate, 2.63 profit factor).</li>
+                        <li><strong>The Root Problem:</strong> The scanner is over-generating lower-conviction entries late in the session (20+ trades opened after 13:00) that lack the time runway needed to reach targets.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span>3. The Expansionist — Growth & Payoff Maximization</span>
+                    <span class="advisor-tag tag-green">View Analysis</span>
+                </summary>
+                <div class="details-content">
+                    <p><strong>Verdict: Tremendous Upside Potential — Unlock Multi-Day Compound Riches</strong></p>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>Phenomenal Payoff Ratio (2.54x):</strong> Horus hits huge gains (+3,269 EGP avg win vs -1,288 EGP avg loss).</li>
+                        <li><strong>Uncapped Momentum Leaders:</strong> BIOC (+58%) and AFMC (+34%) show explosive momentum. Force-closing at 14:30 cuts their growth short. Enabling multi-day trailing stops could double strategy returns.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span>4. The Outsider — External Reality & Operational Feasibility</span>
+                    <span class="advisor-tag tag-amber">View Analysis</span>
+                </summary>
+                <div class="details-content">
+                    <p><strong>Verdict: Practical Execution Disconnect</strong></p>
+                    <br>
+                    <ul style="margin-left: 20px;">
+                        <li><strong>123 Trades is Operationally Impossible:</strong> Retail brokers and human traders cannot execute 123 concurrent stock positions in 4.5 hours.</li>
+                        <li><strong>Micro-Share Orders:</strong> Trade #83 (UEFM: 7 shares), Trade #109 (INFI: 3 shares), Trade #108 (ETEL: 9 shares). Minimum ticket commissions will wipe out small trades.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span>5. The Executor — Actionable Engineering Blueprint</span>
+                    <span class="advisor-tag tag-blue">View Analysis</span>
+                </summary>
+                <div class="details-content">
+                    <p><strong>Verdict: Actionable 4-Step Engineering Fix</strong></p>
+                    <br>
+                    <ol style="margin-left: 20px;">
+                        <li><strong>Entry Cutoff Time (12:30 PM):</strong> Disallow new trade entries in the final 2 hours of trading.</li>
+                        <li><strong>Minimum Order Size & Position Cap:</strong> Minimum 5,000 EGP per trade; max 10 concurrent positions.</li>
+                        <li><strong>Friction Ingestion:</strong> Inject 0.30% roundtrip commission + 0.10% slippage.</li>
+                        <li><strong>EOD Pre-Close Management (14:00 PM):</strong> Trail stops tightly on gainers; exit stagnant trades cleanly before closing bell.</li>
+                    </ol>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span>🔍 Anonymous Peer Review Highlights</span>
+                    <span class="advisor-tag tag-purple">View Peer Reviews</span>
+                </summary>
+                <div class="details-content">
+                    <p><strong>Reviewer Consensus:</strong> Response E (The Executor) and Response B (First Principles) were voted strongest for providing mathematical deconstruction and direct execution cutoffs. Response C (The Expansionist) was flagged for biggest blind spot regarding overnight gap risk and lack of friction testing.</p>
+                </div>
+            </details>
+        </div>
+
+        <footer>
+            LLM Council Session Completed: 2026-07-26 | Methodology by Andrej Karpathy | Horus Analytics II Engine
+        </footer>
+    </div>
+</body>
+</html>

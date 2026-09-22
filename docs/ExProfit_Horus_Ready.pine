@@ -1,0 +1,41 @@
+//@version=6
+strategy('ExProfit ST S&R - Horus Ready', shorttitle = 'ExProfit Horus', overlay = true, pyramiding = 0, process_orders_on_close = true, calc_on_every_tick = false, initial_capital = 100000)
+
+trendLength = 144
+rsiLength = 28
+rsiSignalLength = 10
+rsiCeiling = 65.0
+fastLength = 5
+slowLength = 10
+showLevels = true
+
+trendEma = ta.ema(close, trendLength)
+rsiValue = ta.rsi(close, rsiLength)
+rsiSignal = ta.ema(rsiValue, rsiSignalLength)
+fastSignal = ta.ema(close, fastLength)
+slowSignal = ta.ema(close, slowLength)
+
+trendOk = close > trendEma
+rsiOk = rsiValue < rsiCeiling and rsiValue > rsiSignal
+longCondition = ta.crossover(fastSignal, slowSignal) and trendOk and rsiOk
+exitCondition = ta.crossunder(fastSignal, slowSignal) or close < trendEma or rsiValue < rsiSignal
+
+if longCondition
+    strategy.entry('Long', strategy.long)
+
+if exitCondition
+    strategy.close('Long')
+
+entryGuide = showLevels and strategy.position_size > 0 ? strategy.position_avg_price : na
+trendGuide = showLevels ? trendEma : na
+
+plot(fastSignal, 'Fast EMA', color = color.new(color.aqua, 0), linewidth = 1)
+plot(slowSignal, 'Slow EMA', color = color.new(color.orange, 0), linewidth = 1)
+plot(trendGuide, 'Trend EMA', color = color.new(color.green, 20), linewidth = 2)
+plot(entryGuide, 'Entry Guide', color = color.new(color.blue, 0), linewidth = 1, style = plot.style_linebr)
+
+plotshape(longCondition, title = 'Long Entry', text = 'BUY', style = shape.labelup, location = location.belowbar, color = color.new(color.green, 0), textcolor = color.white, size = size.small)
+plotshape(exitCondition and strategy.position_size > 0, title = 'Long Exit', text = 'EXIT', style = shape.labeldown, location = location.abovebar, color = color.new(color.red, 0), textcolor = color.white, size = size.small)
+
+alertcondition(longCondition, title = 'Long Entry', message = 'ExProfit Horus long entry')
+alertcondition(exitCondition, title = 'Long Exit', message = 'ExProfit Horus long exit')

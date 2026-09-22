@@ -1,0 +1,52 @@
+{
+    "indices": {
+        "MAIN": [
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "AMZN",
+            "META",
+            "TSLA",
+            "NVDA",
+            "BRK-B",
+            "JNJ",
+            "V"
+        ],
+        "EGX30": [
+            "AAPL",
+            "MSFT",
+            "GOOGL",
+            "AMZN",
+            "META",
+            "TSLA",
+            "NVDA",
+            "BRK-B",
+            "JNJ",
+            "V"
+        ]
+    },
+    "sectors": {
+        "AAPL": "Technology",
+        "MSFT": "Technology",
+        "GOOGL": "Technology",
+        "AMZN": "Consumer Discretionary",
+        "META": "Communication Services",
+        "TSLA": "Consumer Discretionary",
+        "NVDA": "Technology",
+        "BRK-B": "Financials",
+        "JNJ": "Healthcare",
+        "V": "Financials"
+    },
+    "names": {
+        "AAPL": "Apple Inc.",
+        "MSFT": "Microsoft Corporation",
+        "GOOGL": "Alphabet Inc.",
+        "AMZN": "Amazon.com Inc.",
+        "META": "Meta Platforms Inc.",
+        "TSLA": "Tesla Inc.",
+        "NVDA": "NVIDIA Corporation",
+        "BRK-B": "Berkshire Hathaway Inc.",
+        "JNJ": "Johnson & Johnson",
+        "V": "Visa Inc."
+    }
+}

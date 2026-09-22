@@ -1,0 +1,52 @@
+{
+    "indices": {
+        "MAIN": [
+            "BTC/USDT",
+            "ETH/USDT",
+            "SOL/USDT",
+            "BNB/USDT",
+            "XRP/USDT",
+            "ADA/USDT",
+            "AVAX/USDT",
+            "DOT/USDT",
+            "DOGE/USDT",
+            "LINK/USDT"
+        ],
+        "EGX30": [
+            "BTC/USDT",
+            "ETH/USDT",
+            "SOL/USDT",
+            "BNB/USDT",
+            "XRP/USDT",
+            "ADA/USDT",
+            "AVAX/USDT",
+            "DOT/USDT",
+            "DOGE/USDT",
+            "LINK/USDT"
+        ]
+    },
+    "sectors": {
+        "BTC/USDT": "Layer 1",
+        "ETH/USDT": "Layer 1",
+        "SOL/USDT": "Layer 1",
+        "BNB/USDT": "Exchange Token",
+        "XRP/USDT": "Payment",
+        "ADA/USDT": "Layer 1",
+        "AVAX/USDT": "Layer 1",
+        "DOT/USDT": "Layer 1",
+        "DOGE/USDT": "Memecoin",
+        "LINK/USDT": "Oracle"
+    },
+    "names": {
+        "BTC/USDT": "Bitcoin",
+        "ETH/USDT": "Ethereum",
+        "SOL/USDT": "Solana",
+        "BNB/USDT": "Binance Coin",
+        "XRP/USDT": "Ripple",
+        "ADA/USDT": "Cardano",
+        "AVAX/USDT": "Avalanche",
+        "DOT/USDT": "Polkadot",
+        "DOGE/USDT": "Dogecoin",
+        "LINK/USDT": "Chainlink"
+    }
+}

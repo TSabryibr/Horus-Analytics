@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Council Verdict — Horus Replay Engine (Amended & Sanitized)</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-blue: #38bdf8;
+            --accent-green: #22c55e;
+            --accent-red: #ef4444;
+            --accent-amber: #f59e0b;
+            --accent-purple: #a855f7;
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 30px 20px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            background: rgba(34, 197, 94, 0.15);
+            color: var(--accent-green);
+            margin-bottom: 10px;
+        }
+        h1 { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 10px; }
+        .subtitle { color: var(--text-muted); font-size: 1rem; }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+        .metric-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            text-align: center;
+        }
+        .metric-val { font-size: 1.5rem; font-weight: 800; margin-top: 5px; }
+        .metric-label { font-size: 0.82rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
+        .val-green { color: var(--accent-green); }
+        .val-blue { color: var(--accent-blue); }
+        .val-amber { color: var(--accent-amber); }
+
+        .section-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+        }
+
+        .verdict-box {
+            background: rgba(15, 23, 42, 0.6);
+            border-left: 4px solid var(--accent-green);
+            padding: 20px;
+            border-radius: 0 10px 10px 0;
+            margin-bottom: 20px;
+        }
+        .verdict-box h3 { color: var(--accent-green); margin-bottom: 8px; font-size: 1.1rem; }
+
+        .one-thing-box {
+            background: rgba(56, 189, 248, 0.1);
+            border: 1px solid var(--accent-blue);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 25px;
+        }
+        .one-thing-box h3 { color: var(--accent-blue); font-size: 1.2rem; margin-bottom: 6px; display: flex; align-items: center; gap: 8px; }
+
+        .advisor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .advisor-stance {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .advisor-name { font-weight: 700; font-size: 0.95rem; margin-bottom: 4px; }
+        .advisor-tag { font-size: 0.75rem; padding: 2px 8px; border-radius: 4px; display: inline-block; font-weight: 600; margin-bottom: 8px; }
+        .tag-blue { background: rgba(56, 189, 248, 0.2); color: var(--accent-blue); }
+        .tag-green { background: rgba(34, 197, 94, 0.2); color: var(--accent-green); }
+        .tag-purple { background: rgba(168, 85, 247, 0.2); color: var(--accent-purple); }
+
+        details {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+        summary {
+            padding: 16px 20px;
+            font-weight: 700;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        summary:hover { background: rgba(255, 255, 255, 0.03); }
+        .details-content { padding: 20px; border-top: 1px solid var(--border); color: #cbd5e1; font-size: 0.95rem; }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 40px;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">Amended Plan & Council Resolution Passed</span>
+            <h1>Horus Replay Engine — Council Clashes Resolved</h1>
+            <p class="subtitle">Enforced Rules: Signal Lane Classification | 12:30 PM Entry Cutoff | Max 5 Concurrent Positions</p>
+        </header>
+
+        <!-- KPI Metrics Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Signal Lanes</div>
+                <div class="metric-val val-green">SWING / INTRADAY</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Entry Cutoff</div>
+                <div class="metric-val val-blue">12:30 PM</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Max Concurrent Pos</div>
+                <div class="metric-val val-amber">5 Positions</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Friction Ingested</div>
+                <div class="metric-val">0.30% Roundtrip</div>
+            </div>
+        </div>
+
+        <!-- Chairman Synthesis Section -->
+        <div class="section-card">
+            <div class="section-title">👑 Chairman's Synthesis & Amended Verdict</div>
+
+            <div class="verdict-box">
+                <h3>🤝 Complete Resolution of All Council Clashes</h3>
+                <p>The council has <strong>unanimously approved the amended execution framework</strong>. By classifying <code>PRE-CLOSE</code> and <code>DAILY SIGNAL</code> scans (plus scans at/after 14:00 PM) as <strong>SWING SIGNALS</strong> and pre-14:00 scans as <strong>INTRADAY SIGNALS</strong>, we eliminate artificial session-end forced dumps while allowing momentum multi-baggers (e.g. BIOC +58%, AFMC +34%) to compound across sessions as swing trades.</p>
+            </div>
+
+            <div class="verdict-box" style="border-left-color: var(--accent-blue);">
+                <h3 style="color: var(--accent-blue);">🛡️ Enforced Execution Guardrails</h3>
+                <ul style="margin-left: 20px; margin-top: 5px;">
+                    <li><strong>12:30 PM Intraday Entry Cutoff:</strong> Disallows new intraday entries in the final 2 hours of the trading day, guaranteeing entered trades have at least 120 minutes of liquid market runway.</li>
+                    <li><strong>Max 5 Concurrent Positions Limit:</strong> Caps active open positions at 5 max, prioritizing high-conviction signals (Score 10 before Score 9) and eliminating micro-share order clutter (3 shares INFI).</li>
+                    <li><strong>Realistic Friction Ingestion:</strong> Applies 0.15% buy + 0.15% sell commission (0.30% roundtrip) + 0.10% slippage model to all replay PnL calculations.</li>
+                </ul>
+            </div>
+
+            <div class="verdict-box" style="border-left-color: var(--accent-purple);">
+                <h3 style="color: var(--accent-purple);">⚡ Final Council Recommendation</h3>
+                <p>The amended Horus Replay configuration is <strong>fully approved for production paper and campaign execution</strong>. The trading engine now operates with institutional risk controls, clear signal lane segregation, and realistic friction modeling.</p>
+            </div>
+
+            <div class="one-thing-box">
+                <h3>⚡ The One Thing to Do First</h3>
+                <p><strong>Execute sanitized campaign replay benchmarks and monitor live signal lane broadcasts.</strong></p>
+            </div>
+        </div>
+
+        <!-- Advisor Positions Overview -->
+        <div class="section-card">
+            <div class="section-title">🏛️ Unanimous Advisor Council Alignment</div>
+            <div class="advisor-grid">
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Contrarian</div>
+                    <span class="advisor-tag tag-green">RISK FLATTENED</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Confirms 5-position cap and 12:30 cutoff eliminate 123-trade hyperactivity and artificial EOD dumps.</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">First Principles</div>
+                    <span class="advisor-tag tag-purple">PHYSICS ALIGNED</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Confirms signal lanes align decay timeframes with underlying market price discovery.</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Expansionist</div>
+                    <span class="advisor-tag tag-green">SWING UNLOCKED</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Celebrates preservation of momentum runners (BIOC +58%) across session boundaries.</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Outsider</div>
+                    <span class="advisor-tag tag-blue">FEASIBLE EXEC</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Validates that 5 max open positions makes the portfolio humanly and operationally clean.</p>
+                </div>
+                <div class="advisor-stance">
+                    <div class="advisor-name">The Executor</div>
+                    <span class="advisor-tag tag-blue">IMPLEMENTED</span>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Verified settings and code updates in settings.py and replay_engine.py.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            LLM Council Session Completed: 2026-07-26 | Methodology by Andrej Karpathy | Horus Analytics II Engine
+        </footer>
+    </div>
+</body>
+</html>

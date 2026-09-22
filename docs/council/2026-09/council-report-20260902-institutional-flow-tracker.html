@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Council Report — Institutional Flow Tracker Audit</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --card-border: #1f2937;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --accent-rose: #f43f5e;
+            --accent-amber: #f59e0b;
+            --accent-indigo: #6366f1;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 6px;
+            background: rgba(6, 182, 212, 0.15);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+
+        /* Chairman Verdict Box */
+        .verdict-box {
+            background: linear-gradient(180deg, rgba(17, 24, 39, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(6, 182, 212, 0.4);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(6, 182, 212, 0.1);
+        }
+
+        .verdict-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .verdict-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .verdict-status {
+            font-size: 12px;
+            font-weight: 700;
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-emerald);
+            padding: 4px 10px;
+            border-radius: 9999px;
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-cyan);
+            margin: 20px 0 8px 0;
+        }
+
+        p, ul {
+            font-size: 14px;
+            color: #d1d5db;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .highlight-card {
+            background: rgba(6, 182, 212, 0.08);
+            border: 1px solid rgba(6, 182, 212, 0.25);
+            border-radius: 12px;
+            padding: 16px;
+            margin: 16px 0;
+        }
+
+        .one-thing-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+        }
+
+        .one-thing-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-emerald);
+            margin-bottom: 4px;
+        }
+
+        /* Visual Spectrum */
+        .spectrum-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+
+        .spectrum-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .advisor-pill {
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .advisor-pill-name {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .advisor-pill-stance {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        /* Collapsible Sections */
+        details {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        details[open] {
+            border-color: rgba(6, 182, 212, 0.4);
+        }
+
+        summary {
+            padding: 14px 18px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        summary:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .details-content {
+            padding: 16px 18px;
+            border-top: 1px solid var(--card-border);
+            font-size: 13.5px;
+            color: #d1d5db;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid var(--card-border);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">LLM Council Session #3 • Audit & Strategy</span>
+            <h1>Institutional Flow Tracker (Whales)</h1>
+            <p class="subtitle">Horus Analytics II • Workspace Council Evaluation • 2026-09-02</p>
+        </header>
+
+        <!-- CHAIRMAN FINAL VERDICT -->
+        <div class="verdict-box">
+            <div class="verdict-header">
+                <div class="verdict-title">
+                    🏛️ Chairman Final Verdict
+                </div>
+                <div class="verdict-status">
+                    RETAIN & REFINE
+                </div>
+            </div>
+
+            <div class="section-title">1. Where the Council Agrees</div>
+            <ul>
+                <li><strong>Valuable Strategic Edge:</strong> Tracking institutional accumulation vs distribution is a core macro differentiator for EGX trading and should remain a primary top-level feature.</li>
+                <li><strong>Cognitive Debt in Raw Slopes:</strong> Displaying raw polyfit slope numbers (e.g. <code>OBV Slope: 0.1420</code>) creates unnecessary friction. Traders think in currency flow (EGP) and relative percentiles, not linear regression coefficients.</li>
+                <li><strong>Seamless Signal Desk Integration:</strong> The dynamic ATR-bounded risk parameters (2.5%–8% stop, 5%–20% target with 2.2x R:R) when promoting candidates to Hot/Staging lanes is quantitatively sound and production-ready.</li>
+            </ul>
+
+            <div class="section-title">2. Where the Council Clashes</div>
+            <div class="highlight-card">
+                <p><strong>Divergence Math vs Immediate Execution Polish:</strong></p>
+                <p><em>The Contrarian & First Principles Thinker</em> argued that 1963 OBV on daily EGX closing prices is susceptible to single-day volume spikes and must be augmented with Volume Spread Absorption (VSA).</p>
+                <p><em>The Executor & Outsider</em> argued that current 20-period slope filtering is already capturing multi-week institutional campaigns, and the highest ROI is replacing abstract numbers with <strong>Estimated EGP Capital Inflow</strong> and displaying the <strong>Institutional Support Anchor</strong> directly on cards.</p>
+                <p><em>Chairman Resolution:</em> Phase 1 delivers card clarity (EGP flow and Support Anchor), while Phase 2 introduces the composite Absorption Index to the backend engine.</p>
+            </div>
+
+            <div class="section-title">3. The Recommendation</div>
+            <p>Affirm the Institutional Flow Tracker as a core intelligence module. Implement three immediate high-impact upgrades: (1) Format net capital flow in Millions of EGP, (2) Display the structural Support Anchor price level on candidate cards, and (3) Cross-link Trap Risk warnings to protect operators from illiquid pumps.</p>
+
+            <div class="one-thing-box">
+                <div class="one-thing-title">⚡ The One Thing to Do First</div>
+                <p style="margin: 0; font-weight: 600; color: #ffffff;">
+                    Update candidate cards in <code>WhaleCandidatesGrid.tsx</code> to display Estimated Capital Inflow (in Millions of EGP) and the structural Support Anchor (20-day invalidation level).
+                </p>
+            </div>
+        </div>
+
+        <!-- ADVISOR ALIGNMENT SPECTRUM -->
+        <div class="spectrum-card">
+            <div class="spectrum-title">Council Alignment & Lens Breakdown</div>
+            <div class="grid-5">
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-rose);">The Contrarian</div>
+                    <div class="advisor-pill-stance">Flags single-bar OBV spike distortion & false volume traps</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-cyan);">First Principles</div>
+                    <div class="advisor-pill-stance">Reframes smart money as Volume Absorption vs Volatility</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-indigo);">The Expansionist</div>
+                    <div class="advisor-pill-stance">Advocates multi-timeframe matrices & EGP capital flow metrics</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-amber);">The Outsider</div>
+                    <div class="advisor-pill-stance">Praises header telemetry; urges human-readable gauges over slopes</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-emerald);">The Executor</div>
+                    <div class="advisor-pill-stance">Focuses on Support Anchors, Trap Risk cross-links, and 1-click desk flow</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLLAPSIBLE INDEPENDENT ADVISOR RESPONSES -->
+        <div style="margin-bottom: 24px;">
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 12px; color: #ffffff;">Detailed Advisor Submissions</h3>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-rose); font-weight: 700;">1. The Contrarian — Flaws in Raw 20-Day Daily OBV</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>On-Balance Volume assigns 100% of a session's volume to the close direction based on a single tick difference between today's close and yesterday's close. On the EGX, where closing prices are volume-weighted average prices (VWAP) or influenced by illiquid end-of-day crosses, raw daily OBV can produce false positives.</p>
+                    <p>A single high-volume rebalancing day or block trade on Day 3 can tilt a 20-day linear polyfit slope positive even if the subsequent 17 days were completely dead. Furthermore, without checking whether the stock is near major historical resistance or trapped under a descending 200 EMA, buying raw 'OBV Accumulation' risks buying the bottom of a prolonged downtrend.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-cyan); font-weight: 700;">2. The First Principles Thinker — The Physical Trace of Stealth Accumulation</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>When an institution accumulates 100 million EGP in an EGX security (like COMI, HRHO, or EAST), they cannot buy market orders without causing 10% limit-up slippage. Therefore, by first principles, institutional execution is characterized by: (1) Time Persistence over 5–20 sessions, (2) Volume-to-Volatility Asymmetry (heavy volume on small price range expansion), and (3) Sector Clustering.</p>
+                    <p>The current tab captures time persistence and sector clustering, but misses measuring Volume / Range Elasticity. Reframe the calculation from simple slope divergence to a composite Absorption Index = <code>(OBV Slope * Liquidity Factor) / Normalized Volatility</code>.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-indigo); font-weight: 700;">3. The Expansionist — Capital Flow in Native Millions & Sizing Multipliers</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>Institutional flow is one of the highest-alpha concepts in emerging markets. We should expand this from a single-tab scanner into a core intelligence engine:</p>
+                    <ul>
+                        <li><strong>Capital Flow in Native EGP Millions:</strong> Show Estimated Net Smart Money Flow (e.g. <code>+42.5M EGP Net Inflow</code>) instead of abstract slopes.</li>
+                        <li><strong>Multi-Timeframe Flow Matrix:</strong> Combine Daily (20D) and Weekly (10W) flow bias. When both align, assign a 5-Star Institutional Super-Setup badge.</li>
+                        <li><strong>Automated Sizing Multiplier:</strong> Allow execution algorithms to scale position size by 1.25x when backed by confirmed Whale Accumulation.</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-amber); font-weight: 700;">4. The Outsider — Cognitive Usability & Support Anchors</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>Landing on the page, the header telemetry (<code>🟢 Accumulation Lead (+5)</code> and <code>Lead Sector: Real Estate</code>) immediately grounds an operator within 2 seconds. However, candidate cards displaying <code>OBV Slope: 0.1420</code> and <code>Price Slope: -0.0015</code> create cognitive friction.</p>
+                    <p>Replace raw slopes with intuitive percentile gauges (e.g. <code>Stealth Inflow (88th Percentile)</code>) and display the structural support anchor price so operators know their invalidation level before clicking Promote.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-emerald); font-weight: 700;">5. The Executor — Actionability, Fast Sizing, and Trap Risk Cross-Links</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>The tab features excellent plumbing: fast 8-worker async backend scanning, 300s TTL cache, and dynamic ATR-bounded risk parameters when promoting candidates into desk lanes.</p>
+                    <p>To make it 10x more actionable tomorrow morning: (1) Format net flow value in Millions of EGP, (2) Cross-link Trap Risk diagnostics to flag illiquid volume traps, and (3) Add a concrete Support Anchor invalidation price directly to the card.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--text-muted); font-weight: 700;">6. Anonymized Peer Review Highlights</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <ul>
+                        <li><strong>Strongest Synthesis:</strong> The First Principles Thinker's insight on Volume Absorption vs Volatility asymmetry was rated highest across peer reviewers.</li>
+                        <li><strong>Blind Spot Identified:</strong> Advisors noted that domestic retail volume surges on speculative penny stocks can masquerade as institutional flow if market turnover regime filters are static.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <footer>
+            Horus Analytics II • LLM Council Architecture Review • Generated 2026-09-02
+        </footer>
+    </div>
+</body>
+</html>

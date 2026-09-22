@@ -1,0 +1,758 @@
+{
+    "index_choice": "EGX30",
+    "completed": 15300,
+    "total": 15552,
+    "timestamp": "2026-04-26T00:11:55.547907",
+    "top_results": [
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 69.28,
+            "avg_return": 1.06,
+            "score": 165.0589
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 69.28,
+            "avg_return": 1.06,
+            "score": 165.0589
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 68.33,
+            "avg_return": 1.0,
+            "score": 147.4561
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 68.33,
+            "avg_return": 1.0,
+            "score": 147.4561
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 68.33,
+            "avg_return": 1.0,
+            "score": 147.4561
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 59.04,
+            "avg_return": 1.62,
+            "score": 138.0781
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 59.04,
+            "avg_return": 1.62,
+            "score": 138.0781
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 62.65,
+            "avg_return": 1.29,
+            "score": 135.0993
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 62.65,
+            "avg_return": 1.29,
+            "score": 135.0993
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 67.34,
+            "avg_return": 0.94,
+            "score": 130.516
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 67.34,
+            "avg_return": 0.94,
+            "score": 130.516
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 67.34,
+            "avg_return": 0.94,
+            "score": 130.516
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 61.67,
+            "avg_return": 1.22,
+            "score": 120.6969
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 61.67,
+            "avg_return": 1.22,
+            "score": 120.6969
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 61.67,
+            "avg_return": 1.22,
+            "score": 120.6969
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 57.78,
+            "avg_return": 1.52,
+            "score": 120.3535
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 57.78,
+            "avg_return": 1.52,
+            "score": 120.3535
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 57.78,
+            "avg_return": 1.52,
+            "score": 120.3535
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 30
+            },
+            "trades": 297,
+            "win_rate": 66.33,
+            "avg_return": 0.88,
+            "score": 114.9632
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 30
+            },
+            "trades": 297,
+            "win_rate": 66.33,
+            "avg_return": 0.88,
+            "score": 114.9632
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 6.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 54.22,
+            "avg_return": 1.78,
+            "score": 114.2525
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 6.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 54.22,
+            "avg_return": 1.78,
+            "score": 114.2525
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 0.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 204,
+            "win_rate": 66.18,
+            "avg_return": 0.87,
+            "score": 112.72
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 0.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 204,
+            "win_rate": 66.18,
+            "avg_return": 0.87,
+            "score": 112.72
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 0.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 204,
+            "win_rate": 66.18,
+            "avg_return": 0.87,
+            "score": 112.72
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 56.78,
+            "avg_return": 1.44,
+            "score": 107.6429
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 56.78,
+            "avg_return": 1.44,
+            "score": 107.6429
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 56.78,
+            "avg_return": 1.44,
+            "score": 107.6429
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 30
+            },
+            "trades": 321,
+            "win_rate": 65.73,
+            "avg_return": 0.84,
+            "score": 106.4072
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 30
+            },
+            "trades": 321,
+            "win_rate": 65.73,
+            "avg_return": 0.84,
+            "score": 106.4072
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 30
+            },
+            "trades": 320,
+            "win_rate": 65.62,
+            "avg_return": 0.84,
+            "score": 104.9254
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 60.3,
+            "avg_return": 1.12,
+            "score": 102.6902
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 60.3,
+            "avg_return": 1.12,
+            "score": 102.6902
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 1.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 4.0,
+                "LOOKBACK": 60
+            },
+            "trades": 199,
+            "win_rate": 60.3,
+            "avg_return": 1.12,
+            "score": 102.6902
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 2.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 62.05,
+            "avg_return": 1.0,
+            "score": 101.6883
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 2.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 62.05,
+            "avg_return": 1.0,
+            "score": 101.6883
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 2.0,
+                "TP1_PCT": 3.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 62.05,
+            "avg_return": 1.0,
+            "score": 101.6883
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 6.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 52.78,
+            "avg_return": 1.65,
+            "score": 97.3284
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 6.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 52.78,
+            "avg_return": 1.65,
+            "score": 97.3284
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 2.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 6.0,
+                "LOOKBACK": 60
+            },
+            "trades": 180,
+            "win_rate": 52.78,
+            "avg_return": 1.65,
+            "score": 97.3284
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 2.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 72.29,
+            "avg_return": 0.51,
+            "score": 97.0167
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 2.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 72.29,
+            "avg_return": 0.51,
+            "score": 97.0167
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 0.5,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 204,
+            "win_rate": 55.88,
+            "avg_return": 1.37,
+            "score": 97.0161
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 0.5,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 204,
+            "win_rate": 55.88,
+            "avg_return": 1.37,
+            "score": 97.0161
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 0.5,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 204,
+            "win_rate": 55.88,
+            "avg_return": 1.37,
+            "score": 97.0161
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 10.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 44.58,
+            "avg_return": 2.7,
+            "score": 96.6397
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 3.0,
+                "TP1_PCT": 10.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 44.58,
+            "avg_return": 2.7,
+            "score": 96.6397
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 40,
+                "RSI_MAX": 75,
+                "SL_PCT": 2.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 53.01,
+            "avg_return": 1.61,
+            "score": 96.3421
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 50,
+                "RSI_MAX": 75,
+                "SL_PCT": 2.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 53.01,
+            "avg_return": 1.61,
+            "score": 96.3421
+        },
+        {
+            "params": {
+                "VOL_SPIKE": 3.0,
+                "MOMENTUM": 3.0,
+                "RSI_MIN": 60,
+                "RSI_MAX": 75,
+                "SL_PCT": 2.0,
+                "TP1_PCT": 5.0,
+                "LOOKBACK": 60
+            },
+            "trades": 166,
+            "win_rate": 53.01,
+            "avg_return": 1.61,
+            "score": 96.3421
+        }
+    ]
+}

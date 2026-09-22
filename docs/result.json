@@ -1,0 +1,7372 @@
+{
+ "name": "Horus Test",
+ "type": "bot_chat",
+ "id": 8714890040,
+ "messages": [
+  {
+   "id": 1449,
+   "type": "message",
+   "date": "2026-04-22T22:39:55",
+   "date_unixtime": "1776890395",
+   "from": "Horus Analytics",
+   "from_id": "user7503995235",
+   "text": [
+    {
+     "type": "bot_command",
+     "text": "/start"
+    }
+   ],
+   "text_entities": [
+    {
+     "type": "bot_command",
+     "text": "/start"
+    }
+   ]
+  },
+  {
+   "id": 1450,
+   "type": "message",
+   "date": "2026-04-22T22:39:59",
+   "date_unixtime": "1776890399",
+   "from": "Horus Analytics",
+   "from_id": "user7503995235",
+   "text": "hi",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "hi"
+    }
+   ]
+  },
+  {
+   "id": 1457,
+   "type": "message",
+   "date": "2026-04-22T23:04:15",
+   "date_unixtime": "1776891855",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🧪 HORUS TEST BOT CHECK\nThis channel receives Market Replay & Dry Run alerts.\nTimestamp: 2026-04-22 23:04:15",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🧪 HORUS TEST BOT CHECK\nThis channel receives Market Replay & Dry Run alerts.\nTimestamp: 2026-04-22 23:04:15"
+    }
+   ]
+  },
+  {
+   "id": 1458,
+   "type": "message",
+   "date": "2026-04-22T23:04:28",
+   "date_unixtime": "1776891868",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🧪 HORUS TEST BOT CHECK\nThis channel receives Market Replay & Dry Run alerts.\nTimestamp: 2026-04-22 23:04:28",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🧪 HORUS TEST BOT CHECK\nThis channel receives Market Replay & Dry Run alerts.\nTimestamp: 2026-04-22 23:04:28"
+    }
+   ]
+  },
+  {
+   "id": 1459,
+   "type": "message",
+   "date": "2026-04-22T23:09:16",
+   "date_unixtime": "1776892156",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🧪 DRY RUN 🧪 DRY RUN STARTED\nDate: 2026-04-22\nNotify: True | Report: True | AI: True",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🧪 DRY RUN 🧪 DRY RUN STARTED\nDate: 2026-04-22\nNotify: True | Report: True | AI: True"
+    }
+   ]
+  },
+  {
+   "id": 1460,
+   "type": "message",
+   "date": "2026-04-22T23:09:20",
+   "date_unixtime": "1776892160",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🧪 DRY RUN DAILY SCAN COMPLETE\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🧪 DRY RUN DAILY SCAN COMPLETE\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1461,
+   "type": "message",
+   "date": "2026-04-22T23:09:21",
+   "date_unixtime": "1776892161",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🧪 DRY RUN FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🧪 DRY RUN FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1462,
+   "type": "message",
+   "date": "2026-04-22T23:11:11",
+   "date_unixtime": "1776892271",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🧪 DRY RUN AI DAILY REPORT\n",
+    {
+     "type": "bold",
+     "text": "HORUS AI DAILY MARKET REPORT"
+    },
+    "\n",
+    {
+     "type": "code",
+     "text": "2026-04-22 14:30"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Regime:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "NEUTRAL"
+    },
+    "  |  ",
+    {
+     "type": "bold",
+     "text": "Confidence:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "52.0%"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "Execution:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "CAPITALPRESERVATION"
+    },
+    "  |  ",
+    {
+     "type": "bold",
+     "text": "Selectivity:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "VERYHIGH"
+    },
+    "  |  ",
+    {
+     "type": "bold",
+     "text": "Risk/Trade:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "0.50%"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Executive Summary"
+    },
+    "\n• MARKET STRUCTURE: Neutral bias (52% confidence) due to conflict between Macro/Strategy (Bullish) and Whale/Sector/Trap data (Bearish).\n• EXECUTION PROFILE: CAPITALPRESERVATION | Selectivity: VERYHIGH | Max Risk per Trade: 0.5%.\n• WHALE FLOW: Distribution dominance (74%) with top outflows in ACAMD, VALU, and HELI.\n• SECTOR BREADTH: Severely lagging in Banks, Real Estate, and Basic Resources; 0 leading sectors detected.\n\n",
+    {
+     "type": "bold",
+     "text": "Top Setups"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "CASH"
+    },
+    " HOLD ",
+    {
+     "type": "code",
+     "text": "75%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "TAQA"
+    },
+    " WATCH ",
+    {
+     "type": "code",
+     "text": "55%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "13.46 - 13.60 (Bullish Breakout)"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "12.67 (Tight stop for Capital Preservation)"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "14.26 (R:R 1.8:1)"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "ARAB"
+    },
+    " WATCH ",
+    {
+     "type": "code",
+     "text": "45%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "Confirm breakout above recent high"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "Below recent swing low"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "2.0R target"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "HELI"
+    },
+    " SELL ",
+    {
+     "type": "code",
+     "text": "60%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "6.15 - 6.30"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "6.55"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "5.40 (R:R > 2:1)"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Risk Radar"
+    },
+    "\n• PORTFOLIO RISK: Mandatory risk reduction. Current mode CAPITALPRESERVATION prohibits aggressive entries; max 0.5% risk per trade.\n• DATA INTEGRITY: Data is STALE (Score 40). All signals are subject to degradation; verify with live L2 order flow before execution.\n• DISTRIBUTION RISK: 43 Bull Traps and 17 Distributing Whales indicate a high probability of a 'Bull Trap' environment; avoid buying breakouts without massive volume.\n\n",
+    {
+     "type": "bold",
+     "text": "Discipline:"
+    },
+    " Validate volume, keep stops hard, avoid forcing low-edge setups."
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🧪 DRY RUN AI DAILY REPORT\n"
+    },
+    {
+     "type": "bold",
+     "text": "HORUS AI DAILY MARKET REPORT"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "code",
+     "text": "2026-04-22 14:30"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Regime:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "NEUTRAL"
+    },
+    {
+     "type": "plain",
+     "text": "  |  "
+    },
+    {
+     "type": "bold",
+     "text": "Confidence:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "52.0%"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "Execution:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "CAPITALPRESERVATION"
+    },
+    {
+     "type": "plain",
+     "text": "  |  "
+    },
+    {
+     "type": "bold",
+     "text": "Selectivity:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "VERYHIGH"
+    },
+    {
+     "type": "plain",
+     "text": "  |  "
+    },
+    {
+     "type": "bold",
+     "text": "Risk/Trade:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "0.50%"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Executive Summary"
+    },
+    {
+     "type": "plain",
+     "text": "\n• MARKET STRUCTURE: Neutral bias (52% confidence) due to conflict between Macro/Strategy (Bullish) and Whale/Sector/Trap data (Bearish).\n• EXECUTION PROFILE: CAPITALPRESERVATION | Selectivity: VERYHIGH | Max Risk per Trade: 0.5%.\n• WHALE FLOW: Distribution dominance (74%) with top outflows in ACAMD, VALU, and HELI.\n• SECTOR BREADTH: Severely lagging in Banks, Real Estate, and Basic Resources; 0 leading sectors detected.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Top Setups"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "CASH"
+    },
+    {
+     "type": "plain",
+     "text": " HOLD "
+    },
+    {
+     "type": "code",
+     "text": "75%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "TAQA"
+    },
+    {
+     "type": "plain",
+     "text": " WATCH "
+    },
+    {
+     "type": "code",
+     "text": "55%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "13.46 - 13.60 (Bullish Breakout)"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "12.67 (Tight stop for Capital Preservation)"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "14.26 (R:R 1.8:1)"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "ARAB"
+    },
+    {
+     "type": "plain",
+     "text": " WATCH "
+    },
+    {
+     "type": "code",
+     "text": "45%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "Confirm breakout above recent high"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "Below recent swing low"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "2.0R target"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": " SELL "
+    },
+    {
+     "type": "code",
+     "text": "60%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "6.15 - 6.30"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "6.55"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "5.40 (R:R > 2:1)"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Risk Radar"
+    },
+    {
+     "type": "plain",
+     "text": "\n• PORTFOLIO RISK: Mandatory risk reduction. Current mode CAPITALPRESERVATION prohibits aggressive entries; max 0.5% risk per trade.\n• DATA INTEGRITY: Data is STALE (Score 40). All signals are subject to degradation; verify with live L2 order flow before execution.\n• DISTRIBUTION RISK: 43 Bull Traps and 17 Distributing Whales indicate a high probability of a 'Bull Trap' environment; avoid buying breakouts without massive volume.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Discipline:"
+    },
+    {
+     "type": "plain",
+     "text": " Validate volume, keep stops hard, avoid forcing low-edge setups."
+    }
+   ]
+  },
+  {
+   "id": 1463,
+   "type": "message",
+   "date": "2026-04-22T23:11:11",
+   "date_unixtime": "1776892271",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🧪 DRY RUN ✅ DRY RUN COMPLETE\nDate: 2026-04-22\nSignals: 5 | Regime: BULLISH\nDuration: 116.25s\nPipeline: ✅ Market Scan → ✅ Persist Signals → ✅ Generate Signal Cards → ✅ Telegram Broadcast → ✅ Signal Pipeline → ✅ AI Report → ✅ Signal Monitor",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🧪 DRY RUN ✅ DRY RUN COMPLETE\nDate: 2026-04-22\nSignals: 5 | Regime: BULLISH\nDuration: 116.25s\nPipeline: ✅ Market Scan → ✅ Persist Signals → ✅ Generate Signal Cards → ✅ Telegram Broadcast → ✅ Signal Pipeline → ✅ AI Report → ✅ Signal Monitor"
+    }
+   ]
+  },
+  {
+   "id": 1464,
+   "type": "message",
+   "date": "2026-04-22T23:12:50",
+   "date_unixtime": "1776892370",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY 🎬 REPLAY SESSION STARTED\nDate: 2026-04-22\nSpeed: 10x\nMarket: 10:00 → 14:30\nEstimated duration: 27 min",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY 🎬 REPLAY SESSION STARTED\nDate: 2026-04-22\nSpeed: 10x\nMarket: 10:00 → 14:30\nEstimated duration: 27 min"
+    }
+   ]
+  },
+  {
+   "id": 1465,
+   "type": "message",
+   "date": "2026-04-22T23:12:54",
+   "date_unixtime": "1776892374",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1466,
+   "type": "message",
+   "date": "2026-04-22T23:12:55",
+   "date_unixtime": "1776892375",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1467,
+   "type": "message",
+   "date": "2026-04-22T23:13:29",
+   "date_unixtime": "1776892409",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1468,
+   "type": "message",
+   "date": "2026-04-22T23:13:30",
+   "date_unixtime": "1776892410",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1469,
+   "type": "message",
+   "date": "2026-04-22T23:14:04",
+   "date_unixtime": "1776892444",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1470,
+   "type": "message",
+   "date": "2026-04-22T23:14:05",
+   "date_unixtime": "1776892445",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1471,
+   "type": "message",
+   "date": "2026-04-22T23:14:39",
+   "date_unixtime": "1776892479",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1472,
+   "type": "message",
+   "date": "2026-04-22T23:14:40",
+   "date_unixtime": "1776892480",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1473,
+   "type": "message",
+   "date": "2026-04-22T23:15:14",
+   "date_unixtime": "1776892514",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1474,
+   "type": "message",
+   "date": "2026-04-22T23:15:15",
+   "date_unixtime": "1776892515",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1475,
+   "type": "message",
+   "date": "2026-04-22T23:15:49",
+   "date_unixtime": "1776892549",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1476,
+   "type": "message",
+   "date": "2026-04-22T23:15:49",
+   "date_unixtime": "1776892549",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1477,
+   "type": "message",
+   "date": "2026-04-22T23:16:24",
+   "date_unixtime": "1776892584",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1478,
+   "type": "message",
+   "date": "2026-04-22T23:16:25",
+   "date_unixtime": "1776892585",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1479,
+   "type": "message",
+   "date": "2026-04-22T23:17:04",
+   "date_unixtime": "1776892624",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1480,
+   "type": "message",
+   "date": "2026-04-22T23:17:05",
+   "date_unixtime": "1776892625",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1481,
+   "type": "message",
+   "date": "2026-04-22T23:17:39",
+   "date_unixtime": "1776892659",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1482,
+   "type": "message",
+   "date": "2026-04-22T23:17:40",
+   "date_unixtime": "1776892660",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1483,
+   "type": "message",
+   "date": "2026-04-22T23:18:13",
+   "date_unixtime": "1776892693",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1484,
+   "type": "message",
+   "date": "2026-04-22T23:18:14",
+   "date_unixtime": "1776892694",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1485,
+   "type": "message",
+   "date": "2026-04-22T23:18:47",
+   "date_unixtime": "1776892727",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1486,
+   "type": "message",
+   "date": "2026-04-22T23:18:48",
+   "date_unixtime": "1776892728",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1487,
+   "type": "message",
+   "date": "2026-04-22T23:19:22",
+   "date_unixtime": "1776892762",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1488,
+   "type": "message",
+   "date": "2026-04-22T23:19:23",
+   "date_unixtime": "1776892763",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1489,
+   "type": "message",
+   "date": "2026-04-22T23:19:57",
+   "date_unixtime": "1776892797",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1490,
+   "type": "message",
+   "date": "2026-04-22T23:19:58",
+   "date_unixtime": "1776892798",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1491,
+   "type": "message",
+   "date": "2026-04-22T23:20:32",
+   "date_unixtime": "1776892832",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1492,
+   "type": "message",
+   "date": "2026-04-22T23:20:33",
+   "date_unixtime": "1776892833",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1493,
+   "type": "message",
+   "date": "2026-04-22T23:21:07",
+   "date_unixtime": "1776892867",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1494,
+   "type": "message",
+   "date": "2026-04-22T23:21:08",
+   "date_unixtime": "1776892868",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1495,
+   "type": "message",
+   "date": "2026-04-22T23:21:42",
+   "date_unixtime": "1776892902",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1496,
+   "type": "message",
+   "date": "2026-04-22T23:21:43",
+   "date_unixtime": "1776892903",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1497,
+   "type": "message",
+   "date": "2026-04-22T23:22:18",
+   "date_unixtime": "1776892938",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1498,
+   "type": "message",
+   "date": "2026-04-22T23:22:18",
+   "date_unixtime": "1776892938",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1499,
+   "type": "message",
+   "date": "2026-04-22T23:22:53",
+   "date_unixtime": "1776892973",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1500,
+   "type": "message",
+   "date": "2026-04-22T23:22:53",
+   "date_unixtime": "1776892973",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1501,
+   "type": "message",
+   "date": "2026-04-22T23:23:27",
+   "date_unixtime": "1776893007",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1502,
+   "type": "message",
+   "date": "2026-04-22T23:23:28",
+   "date_unixtime": "1776893008",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1503,
+   "type": "message",
+   "date": "2026-04-22T23:24:01",
+   "date_unixtime": "1776893041",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1504,
+   "type": "message",
+   "date": "2026-04-22T23:24:02",
+   "date_unixtime": "1776893042",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1505,
+   "type": "message",
+   "date": "2026-04-22T23:24:37",
+   "date_unixtime": "1776893077",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1506,
+   "type": "message",
+   "date": "2026-04-22T23:24:38",
+   "date_unixtime": "1776893078",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1507,
+   "type": "message",
+   "date": "2026-04-22T23:25:12",
+   "date_unixtime": "1776893112",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1508,
+   "type": "message",
+   "date": "2026-04-22T23:25:12",
+   "date_unixtime": "1776893112",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1509,
+   "type": "message",
+   "date": "2026-04-22T23:25:47",
+   "date_unixtime": "1776893147",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1510,
+   "type": "message",
+   "date": "2026-04-22T23:25:47",
+   "date_unixtime": "1776893147",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1511,
+   "type": "message",
+   "date": "2026-04-22T23:26:21",
+   "date_unixtime": "1776893181",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1512,
+   "type": "message",
+   "date": "2026-04-22T23:26:22",
+   "date_unixtime": "1776893182",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1513,
+   "type": "message",
+   "date": "2026-04-22T23:26:56",
+   "date_unixtime": "1776893216",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1514,
+   "type": "message",
+   "date": "2026-04-22T23:26:57",
+   "date_unixtime": "1776893217",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1515,
+   "type": "message",
+   "date": "2026-04-22T23:27:31",
+   "date_unixtime": "1776893251",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1516,
+   "type": "message",
+   "date": "2026-04-22T23:27:32",
+   "date_unixtime": "1776893252",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1517,
+   "type": "message",
+   "date": "2026-04-22T23:28:06",
+   "date_unixtime": "1776893286",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1518,
+   "type": "message",
+   "date": "2026-04-22T23:28:06",
+   "date_unixtime": "1776893286",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1519,
+   "type": "message",
+   "date": "2026-04-22T23:28:45",
+   "date_unixtime": "1776893325",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1520,
+   "type": "message",
+   "date": "2026-04-22T23:28:46",
+   "date_unixtime": "1776893326",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1521,
+   "type": "message",
+   "date": "2026-04-22T23:29:20",
+   "date_unixtime": "1776893360",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1522,
+   "type": "message",
+   "date": "2026-04-22T23:29:20",
+   "date_unixtime": "1776893360",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1523,
+   "type": "message",
+   "date": "2026-04-22T23:29:55",
+   "date_unixtime": "1776893395",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1524,
+   "type": "message",
+   "date": "2026-04-22T23:29:56",
+   "date_unixtime": "1776893396",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1525,
+   "type": "message",
+   "date": "2026-04-22T23:30:30",
+   "date_unixtime": "1776893430",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1526,
+   "type": "message",
+   "date": "2026-04-22T23:30:30",
+   "date_unixtime": "1776893430",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1527,
+   "type": "message",
+   "date": "2026-04-22T23:31:04",
+   "date_unixtime": "1776893464",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1528,
+   "type": "message",
+   "date": "2026-04-22T23:31:05",
+   "date_unixtime": "1776893465",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1529,
+   "type": "message",
+   "date": "2026-04-22T23:31:39",
+   "date_unixtime": "1776893499",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1530,
+   "type": "message",
+   "date": "2026-04-22T23:31:40",
+   "date_unixtime": "1776893500",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1531,
+   "type": "message",
+   "date": "2026-04-22T23:32:13",
+   "date_unixtime": "1776893533",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1532,
+   "type": "message",
+   "date": "2026-04-22T23:32:14",
+   "date_unixtime": "1776893534",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1533,
+   "type": "message",
+   "date": "2026-04-22T23:32:48",
+   "date_unixtime": "1776893568",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1534,
+   "type": "message",
+   "date": "2026-04-22T23:32:49",
+   "date_unixtime": "1776893569",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1535,
+   "type": "message",
+   "date": "2026-04-22T23:33:23",
+   "date_unixtime": "1776893603",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1536,
+   "type": "message",
+   "date": "2026-04-22T23:33:23",
+   "date_unixtime": "1776893603",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1537,
+   "type": "message",
+   "date": "2026-04-22T23:33:56",
+   "date_unixtime": "1776893636",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1538,
+   "type": "message",
+   "date": "2026-04-22T23:33:57",
+   "date_unixtime": "1776893637",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1539,
+   "type": "message",
+   "date": "2026-04-22T23:34:31",
+   "date_unixtime": "1776893671",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1540,
+   "type": "message",
+   "date": "2026-04-22T23:34:31",
+   "date_unixtime": "1776893671",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1541,
+   "type": "message",
+   "date": "2026-04-22T23:35:05",
+   "date_unixtime": "1776893705",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1542,
+   "type": "message",
+   "date": "2026-04-22T23:35:06",
+   "date_unixtime": "1776893706",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1543,
+   "type": "message",
+   "date": "2026-04-22T23:35:40",
+   "date_unixtime": "1776893740",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1544,
+   "type": "message",
+   "date": "2026-04-22T23:35:41",
+   "date_unixtime": "1776893741",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1545,
+   "type": "message",
+   "date": "2026-04-22T23:36:14",
+   "date_unixtime": "1776893774",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1546,
+   "type": "message",
+   "date": "2026-04-22T23:36:15",
+   "date_unixtime": "1776893775",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1547,
+   "type": "message",
+   "date": "2026-04-22T23:36:50",
+   "date_unixtime": "1776893810",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1548,
+   "type": "message",
+   "date": "2026-04-22T23:36:51",
+   "date_unixtime": "1776893811",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1549,
+   "type": "message",
+   "date": "2026-04-22T23:37:25",
+   "date_unixtime": "1776893845",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1550,
+   "type": "message",
+   "date": "2026-04-22T23:37:25",
+   "date_unixtime": "1776893845",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1551,
+   "type": "message",
+   "date": "2026-04-22T23:37:59",
+   "date_unixtime": "1776893879",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1552,
+   "type": "message",
+   "date": "2026-04-22T23:38:00",
+   "date_unixtime": "1776893880",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1553,
+   "type": "message",
+   "date": "2026-04-22T23:38:34",
+   "date_unixtime": "1776893914",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1554,
+   "type": "message",
+   "date": "2026-04-22T23:38:35",
+   "date_unixtime": "1776893915",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1555,
+   "type": "message",
+   "date": "2026-04-22T23:39:07",
+   "date_unixtime": "1776893947",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1556,
+   "type": "message",
+   "date": "2026-04-22T23:39:08",
+   "date_unixtime": "1776893948",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1557,
+   "type": "message",
+   "date": "2026-04-22T23:39:42",
+   "date_unixtime": "1776893982",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1558,
+   "type": "message",
+   "date": "2026-04-22T23:39:43",
+   "date_unixtime": "1776893983",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1559,
+   "type": "message",
+   "date": "2026-04-22T23:40:16",
+   "date_unixtime": "1776894016",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1560,
+   "type": "message",
+   "date": "2026-04-22T23:40:17",
+   "date_unixtime": "1776894017",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1561,
+   "type": "message",
+   "date": "2026-04-22T23:40:51",
+   "date_unixtime": "1776894051",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1562,
+   "type": "message",
+   "date": "2026-04-22T23:40:52",
+   "date_unixtime": "1776894052",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1563,
+   "type": "message",
+   "date": "2026-04-22T23:41:26",
+   "date_unixtime": "1776894086",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1564,
+   "type": "message",
+   "date": "2026-04-22T23:41:27",
+   "date_unixtime": "1776894087",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1565,
+   "type": "message",
+   "date": "2026-04-22T23:42:01",
+   "date_unixtime": "1776894121",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1566,
+   "type": "message",
+   "date": "2026-04-22T23:42:02",
+   "date_unixtime": "1776894122",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1567,
+   "type": "message",
+   "date": "2026-04-22T23:42:36",
+   "date_unixtime": "1776894156",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1568,
+   "type": "message",
+   "date": "2026-04-22T23:42:36",
+   "date_unixtime": "1776894156",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1569,
+   "type": "message",
+   "date": "2026-04-22T23:43:10",
+   "date_unixtime": "1776894190",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1570,
+   "type": "message",
+   "date": "2026-04-22T23:43:11",
+   "date_unixtime": "1776894191",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1571,
+   "type": "message",
+   "date": "2026-04-22T23:43:45",
+   "date_unixtime": "1776894225",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY INTRADAY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1572,
+   "type": "message",
+   "date": "2026-04-22T23:43:46",
+   "date_unixtime": "1776894226",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1573,
+   "type": "message",
+   "date": "2026-04-22T23:43:49",
+   "date_unixtime": "1776894229",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY DAILY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY DAILY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1574,
+   "type": "message",
+   "date": "2026-04-22T23:43:50",
+   "date_unixtime": "1776894230",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1575,
+   "type": "message",
+   "date": "2026-04-22T23:43:53",
+   "date_unixtime": "1776894233",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY DAILY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY DAILY SCAN\nMARKET REGIME: BULLISH\nSignals Found: 5"
+    }
+   ]
+  },
+  {
+   "id": 1576,
+   "type": "message",
+   "date": "2026-04-22T23:43:53",
+   "date_unixtime": "1776894233",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY FULL SUMMARY\n🚀 ",
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    "\n========================\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 ",
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY FULL SUMMARY\n🚀 "
+    },
+    {
+     "type": "bold",
+     "text": "NEW BUY SIGNALS FOUND"
+    },
+    {
+     "type": "plain",
+     "text": "\n========================\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "ZMID"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 5.6800\n   TP1: 5.9495\n   TP2: 6.1875\n   Stop Loss: 5.4779\n   Vol Spike: 3x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "EHDR"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 2.2500\n   TP1: 2.3616\n   TP2: 2.4561\n   Stop Loss: 2.1663\n   Vol Spike: 4.4x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "PHDC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 11.5000\n   TP1: 12.4553\n   TP2: 12.9535\n   Stop Loss: 10.7835\n   Vol Spike: 2.8x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 6.1500\n   TP1: 6.5690\n   TP2: 6.8318\n   Stop Loss: 5.8357\n   Vol Spike: 2.7x\n\n🔹 "
+    },
+    {
+     "type": "bold",
+     "text": "RACC"
+    },
+    {
+     "type": "plain",
+     "text": "\n   Entry: 9.3800\n   TP1: 9.8829\n   TP2: 10.2783\n   Stop Loss: 9.0028\n   Vol Spike: 3.5x\n\n📈 Happy Trading!"
+    }
+   ]
+  },
+  {
+   "id": 1577,
+   "type": "message",
+   "date": "2026-04-22T23:45:20",
+   "date_unixtime": "1776894320",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": [
+    "🔄 REPLAY AI DAILY REPORT\n",
+    {
+     "type": "bold",
+     "text": "HORUS AI DAILY MARKET REPORT"
+    },
+    "\n",
+    {
+     "type": "code",
+     "text": "2026-04-22 15:00"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Regime:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "NEUTRAL"
+    },
+    "  |  ",
+    {
+     "type": "bold",
+     "text": "Confidence:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "52.0%"
+    },
+    "\n",
+    {
+     "type": "bold",
+     "text": "Execution:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "CAPITALPRESERVATION"
+    },
+    "  |  ",
+    {
+     "type": "bold",
+     "text": "Selectivity:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "VERYHIGH"
+    },
+    "  |  ",
+    {
+     "type": "bold",
+     "text": "Risk/Trade:"
+    },
+    " ",
+    {
+     "type": "code",
+     "text": "0.50%"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Executive Summary"
+    },
+    "\n• MARKET STRUCTURE: Neutral bias (52% conf) despite Bullish Macro/Strategy signals due to heavy distribution and lagging sectors.\n• EXECUTION PROFILE: CAPITALPRESERVATION | Selectivity: VERYHIGH | Risk Cap: <=0.5% per trade.\n• WHALE FLOW: Institutional distribution dominates (17 vs 6); top distribution in ACAMD, VALU, HELI.\n• TRAPS: Critical distribution risk with 43 Bull Traps detected; 0 Bear Traps present.\n\n",
+    {
+     "type": "bold",
+     "text": "Top Setups"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "CASH"
+    },
+    " HOLD ",
+    {
+     "type": "code",
+     "text": "85%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "TAQA"
+    },
+    " WATCH ",
+    {
+     "type": "code",
+     "text": "60%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "13.46 - 13.60 (Breakout)"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "12.67 (Tight stop for Capital Preservation)"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "14.26 (RR 1.8:1)"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "ARAB"
+    },
+    " WATCH ",
+    {
+     "type": "code",
+     "text": "50%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "Confirm breakout above recent high"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "Below recent swing low"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "2.0R extension"
+    },
+    "\n• ",
+    {
+     "type": "code",
+     "text": "HELI"
+    },
+    " SELL ",
+    {
+     "type": "code",
+     "text": "65%"
+    },
+    " | Entry: ",
+    {
+     "type": "code",
+     "text": "6.15 - 6.30"
+    },
+    " | SL: ",
+    {
+     "type": "code",
+     "text": "6.55"
+    },
+    " | TP: ",
+    {
+     "type": "code",
+     "text": "5.40 (RR 2.1:1)"
+    },
+    "\n\n",
+    {
+     "type": "bold",
+     "text": "Risk Radar"
+    },
+    "\n• PORTFOLIO: Mandatory risk reduction. Current mode CAPITALPRESERVATION prohibits widening stops; maintain <0.5% risk per trade.\n• DATA INTEGRITY: Data is STALE (Score 40). All signals must be verified against live L2 order books before execution.\n• DISTRIBUTION RISK: 43 Bull Traps and 17 Distributing Whales indicate smart money is exiting into retail liquidity.\n\n",
+    {
+     "type": "bold",
+     "text": "Discipline:"
+    },
+    " Validate volume, keep stops hard, avoid forcing low-edge setups."
+   ],
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY AI DAILY REPORT\n"
+    },
+    {
+     "type": "bold",
+     "text": "HORUS AI DAILY MARKET REPORT"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "code",
+     "text": "2026-04-22 15:00"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Regime:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "NEUTRAL"
+    },
+    {
+     "type": "plain",
+     "text": "  |  "
+    },
+    {
+     "type": "bold",
+     "text": "Confidence:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "52.0%"
+    },
+    {
+     "type": "plain",
+     "text": "\n"
+    },
+    {
+     "type": "bold",
+     "text": "Execution:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "CAPITALPRESERVATION"
+    },
+    {
+     "type": "plain",
+     "text": "  |  "
+    },
+    {
+     "type": "bold",
+     "text": "Selectivity:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "VERYHIGH"
+    },
+    {
+     "type": "plain",
+     "text": "  |  "
+    },
+    {
+     "type": "bold",
+     "text": "Risk/Trade:"
+    },
+    {
+     "type": "plain",
+     "text": " "
+    },
+    {
+     "type": "code",
+     "text": "0.50%"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Executive Summary"
+    },
+    {
+     "type": "plain",
+     "text": "\n• MARKET STRUCTURE: Neutral bias (52% conf) despite Bullish Macro/Strategy signals due to heavy distribution and lagging sectors.\n• EXECUTION PROFILE: CAPITALPRESERVATION | Selectivity: VERYHIGH | Risk Cap: <=0.5% per trade.\n• WHALE FLOW: Institutional distribution dominates (17 vs 6); top distribution in ACAMD, VALU, HELI.\n• TRAPS: Critical distribution risk with 43 Bull Traps detected; 0 Bear Traps present.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Top Setups"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "CASH"
+    },
+    {
+     "type": "plain",
+     "text": " HOLD "
+    },
+    {
+     "type": "code",
+     "text": "85%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "N/A"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "TAQA"
+    },
+    {
+     "type": "plain",
+     "text": " WATCH "
+    },
+    {
+     "type": "code",
+     "text": "60%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "13.46 - 13.60 (Breakout)"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "12.67 (Tight stop for Capital Preservation)"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "14.26 (RR 1.8:1)"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "ARAB"
+    },
+    {
+     "type": "plain",
+     "text": " WATCH "
+    },
+    {
+     "type": "code",
+     "text": "50%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "Confirm breakout above recent high"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "Below recent swing low"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "2.0R extension"
+    },
+    {
+     "type": "plain",
+     "text": "\n• "
+    },
+    {
+     "type": "code",
+     "text": "HELI"
+    },
+    {
+     "type": "plain",
+     "text": " SELL "
+    },
+    {
+     "type": "code",
+     "text": "65%"
+    },
+    {
+     "type": "plain",
+     "text": " | Entry: "
+    },
+    {
+     "type": "code",
+     "text": "6.15 - 6.30"
+    },
+    {
+     "type": "plain",
+     "text": " | SL: "
+    },
+    {
+     "type": "code",
+     "text": "6.55"
+    },
+    {
+     "type": "plain",
+     "text": " | TP: "
+    },
+    {
+     "type": "code",
+     "text": "5.40 (RR 2.1:1)"
+    },
+    {
+     "type": "plain",
+     "text": "\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Risk Radar"
+    },
+    {
+     "type": "plain",
+     "text": "\n• PORTFOLIO: Mandatory risk reduction. Current mode CAPITALPRESERVATION prohibits widening stops; maintain <0.5% risk per trade.\n• DATA INTEGRITY: Data is STALE (Score 40). All signals must be verified against live L2 order books before execution.\n• DISTRIBUTION RISK: 43 Bull Traps and 17 Distributing Whales indicate smart money is exiting into retail liquidity.\n\n"
+    },
+    {
+     "type": "bold",
+     "text": "Discipline:"
+    },
+    {
+     "type": "plain",
+     "text": " Validate volume, keep stops hard, avoid forcing low-edge setups."
+    }
+   ]
+  },
+  {
+   "id": 1578,
+   "type": "message",
+   "date": "2026-04-22T23:45:20",
+   "date_unixtime": "1776894320",
+   "from": "Horus Test",
+   "from_id": "user8714890040",
+   "text": "🔄 REPLAY ✅ REPLAY SESSION COMPLETE\nDate: 2026-04-22\nTicks: 54/54\nSignals Found: 280\nDuration: 32m 31s",
+   "text_entities": [
+    {
+     "type": "plain",
+     "text": "🔄 REPLAY ✅ REPLAY SESSION COMPLETE\nDate: 2026-04-22\nTicks: 54/54\nSignals Found: 280\nDuration: 32m 31s"
+    }
+   ]
+  }
+ ]
+}

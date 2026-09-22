@@ -1,0 +1,28 @@
+{
+  "holidays": [
+    {
+      "date": "2026-05-26",
+      "description": "EGX Eid Al-Adha holiday"
+    },
+    {
+      "date": "2026-05-27",
+      "description": "EGX Eid Al-Adha holiday"
+    },
+    {
+      "date": "2026-05-28",
+      "description": "EGX Eid Al-Adha holiday"
+    },
+    {
+      "date": "2026-05-29",
+      "description": "EGX Eid Al-Adha holiday"
+    },
+    {
+      "date": "2026-05-30",
+      "description": "EGX Eid Al-Adha holiday"
+    },
+    {
+      "date": "2026-05-31",
+      "description": "EGX Eid Al-Adha holiday"
+    }
+  ]
+}

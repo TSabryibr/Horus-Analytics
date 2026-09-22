@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Council Report — Horus Analytics II Master Implementation Plan</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --card-border: #1f2937;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --accent-cyan: #06b6d4;
+            --accent-emerald: #10b981;
+            --accent-rose: #f43f5e;
+            --accent-amber: #f59e0b;
+            --accent-indigo: #6366f1;
+            --accent-purple: #a855f7;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 32px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-radius: 6px;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-emerald);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+
+        /* Chairman Verdict Box */
+        .verdict-box {
+            background: linear-gradient(180deg, rgba(17, 24, 39, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+            border: 1px solid rgba(16, 185, 129, 0.4);
+            border-radius: 16px;
+            padding: 24px;
+            margin-bottom: 32px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 20px rgba(16, 185, 129, 0.1);
+        }
+
+        .verdict-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .verdict-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--accent-emerald);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .verdict-status {
+            font-size: 12px;
+            font-weight: 700;
+            background: rgba(16, 185, 129, 0.2);
+            color: var(--accent-emerald);
+            padding: 4px 10px;
+            border-radius: 9999px;
+            border: 1px solid rgba(16, 185, 129, 0.4);
+        }
+
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-cyan);
+            margin: 20px 0 8px 0;
+        }
+
+        p, ul {
+            font-size: 14px;
+            color: #d1d5db;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* 4-Phase Roadmap Visual */
+        .roadmap-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+            margin: 20px 0;
+        }
+
+        .roadmap-card {
+            background: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 16px;
+            position: relative;
+        }
+
+        .roadmap-phase-tag {
+            font-size: 10px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--accent-cyan);
+            margin-bottom: 6px;
+            display: block;
+        }
+
+        .roadmap-card-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .roadmap-card-list {
+            font-size: 12px;
+            color: var(--text-muted);
+            list-style: none;
+            padding: 0;
+        }
+
+        .roadmap-card-list li {
+            margin-bottom: 4px;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .roadmap-card-list li::before {
+            content: "•";
+            color: var(--accent-cyan);
+            font-weight: bold;
+        }
+
+        .one-thing-box {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 12px;
+            padding: 16px;
+            margin-top: 20px;
+        }
+
+        .one-thing-title {
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--accent-emerald);
+            margin-bottom: 4px;
+        }
+
+        /* Visual Spectrum */
+        .spectrum-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            padding: 20px;
+            margin-bottom: 32px;
+        }
+
+        .spectrum-title {
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .grid-5 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .advisor-pill {
+            background: #1f2937;
+            border: 1px solid #374151;
+            border-radius: 10px;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .advisor-pill-name {
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .advisor-pill-stance {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        /* Collapsible Sections */
+        details {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        details[open] {
+            border-color: rgba(16, 185, 129, 0.4);
+        }
+
+        summary {
+            padding: 14px 18px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        summary:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .details-content {
+            padding: 16px 18px;
+            border-top: 1px solid var(--card-border);
+            font-size: 13.5px;
+            color: #d1d5db;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid var(--card-border);
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">LLM Council Session #6 • Master Execution Plan</span>
+            <h1>Horus Analytics II — Master Implementation Plan</h1>
+            <p class="subtitle">Unified Execution Strategy for Whales, Traps, Confluence Engine & Portfolio Treasury</p>
+        </header>
+
+        <!-- CHAIRMAN FINAL VERDICT -->
+        <div class="verdict-box">
+            <div class="verdict-header">
+                <div class="verdict-title">
+                    🏛️ Chairman Final Verdict
+                </div>
+                <div class="verdict-status">
+                    APPROVED FOR EXECUTION
+                </div>
+            </div>
+
+            <div class="section-title">The 4-Phase Master Execution Blueprint</div>
+            <div class="roadmap-container">
+                <div class="roadmap-card">
+                    <span class="roadmap-phase-tag">Phase 1</span>
+                    <div class="roadmap-card-title">Specialized Module Upgrades</div>
+                    <ul class="roadmap-card-list">
+                        <li>Whales: Format Millions EGP flow & 20D Support Anchor</li>
+                        <li>Traps: Candle wick ratio filter (&ge; 40%) in Svartalfheim</li>
+                        <li>Traps UI: Portfolio Holding Shield & action re-labeling</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-card">
+                    <span class="roadmap-phase-tag">Phase 2</span>
+                    <div class="roadmap-card-title">Horus Confluence Engine</div>
+                    <ul class="roadmap-card-list">
+                        <li><code>core/confluence.py</code> aggregator service</li>
+                        <li>1-to-5 Star Confluence Scoring algorithm</li>
+                        <li>Asynchronous non-blocking multi-cache integration</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-card">
+                    <span class="roadmap-phase-tag">Phase 3</span>
+                    <div class="roadmap-card-title">Portfolio Active Shield</div>
+                    <ul class="roadmap-card-list">
+                        <li>Live intelligence badges on position rows</li>
+                        <li>Defensive Bull Trap banner alerts in Portfolio</li>
+                        <li>Confluence-weighted Kelly sizing in Desk</li>
+                    </ul>
+                </div>
+
+                <div class="roadmap-card">
+                    <span class="roadmap-phase-tag">Phase 4</span>
+                    <div class="roadmap-card-title">Verification & EXE Release</div>
+                    <ul class="roadmap-card-list">
+                        <li>Automated Pytest & Jest regression verification</li>
+                        <li>Next.js production static export build</li>
+                        <li>Packaging updated <code>HorusAnalytics.exe</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-title">Key Governance Rules</div>
+            <ul>
+                <li><strong>Zero Breaking Changes:</strong> All backend schema additions are strictly non-breaking and additive.</li>
+                <li><strong>Preserve 100% Test Pass Rate:</strong> Must maintain all 53/53 frontend tests and 6/6 backend tests without regression.</li>
+                <li><strong>Multi-Currency Compliance:</strong> USD-denominated tickers (e.g. <code>GTEX</code>) must maintain strict currency isolation from EGP balances.</li>
+            </ul>
+
+            <div class="one-thing-box">
+                <div class="one-thing-title">⚡ Immediate Action Step</div>
+                <p style="margin: 0; font-weight: 600; color: #ffffff;">
+                    Begin Phase 1 implementation: Update <code>Vanaheim.py</code>, <code>WhaleCandidatesGrid.tsx</code>, <code>Svartalfheim.py</code>, and <code>TrapCard.tsx</code>.
+                </p>
+            </div>
+        </div>
+
+        <!-- ADVISOR ALIGNMENT SPECTRUM -->
+        <div class="spectrum-card">
+            <div class="spectrum-title">Council Alignment & Lens Breakdown</div>
+            <div class="grid-5">
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-rose);">The Contrarian</div>
+                    <div class="advisor-pill-stance">Enforces non-breaking data contracts & zero-regression testing</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-cyan);">First Principles</div>
+                    <div class="advisor-pill-stance">Structures the plan along natural architectural dependency layers</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-indigo);">The Expansionist</div>
+                    <div class="advisor-pill-stance">Maximizes alpha with 5-Star Confluence & Kelly multipliers</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-amber);">The Outsider</div>
+                    <div class="advisor-pill-stance">Ensures the 30-Second Morning Usability test is passed</div>
+                </div>
+                <div class="advisor-pill">
+                    <div class="advisor-pill-name" style="color: var(--accent-emerald);">The Executor</div>
+                    <div class="advisor-pill-stance">Delivers concrete file-by-file milestones and release packaging</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- COLLAPSIBLE INDEPENDENT ADVISOR RESPONSES -->
+        <div style="margin-bottom: 24px;">
+            <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 12px; color: #ffffff;">Detailed Advisor Submissions</h3>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-rose); font-weight: 700;">1. The Contrarian — Guardrails Against Scope Bloat & Regression</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>Every new field must be additive and optional. Phase 1 must focus exclusively on zero-risk UI and card upgrades before backend confluence aggregation is hooked in. All multi-cache lookups must remain non-blocking.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-cyan); font-weight: 700;">2. The First Principles Thinker — Architectural Dependency Hierarchy</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>Build strictly from bottom to top: (1) Domain Metadata Contracts &rarr; (2) Module Refinements &rarr; (3) Confluence Aggregator &rarr; (4) Portfolio Integration &rarr; (5) Packaging. Each stage is self-contained and independently verifiable.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-indigo); font-weight: 700;">3. The Expansionist — Full Institutional Alpha Feature Set</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>Deliver the 5-Star Confluence score, Millions of EGP flow formatting, live Portfolio Bull Trap defensive alerts, and dynamic Kelly rebalancing multipliers.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-amber); font-weight: 700;">4. The Outsider — The 30-Second Morning Usability Standard</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>An operator opening Horus must understand macro regime, leading sector, top confluence setups, and portfolio defense status in under 30 seconds with clean, standardized color coding.</p>
+                </div>
+            </details>
+
+            <details>
+                <summary>
+                    <span style="color: var(--accent-emerald); font-weight: 700;">5. The Executor — Concrete Technical Roadmap</span>
+                    <span style="color: var(--text-muted); font-size: 12px;">Expand ▾</span>
+                </summary>
+                <div class="details-content">
+                    <p>Execute the 4-phase plan with strict test validation after each milestone, followed by production Next.js static build and PyInstaller executable packaging.</p>
+                </div>
+            </details>
+        </div>
+
+        <footer>
+            Horus Analytics II • Master Implementation Council • Generated 2026-09-02
+        </footer>
+    </div>
+</body>
+</html>

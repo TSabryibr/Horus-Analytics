@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM Council Report — Seasonal Pattern Analysis</title>
+    <style>
+        :root {
+            --bg-dark: #0b0c10;
+            --card-bg: #14161d;
+            --card-border: rgba(244, 63, 94, 0.2);
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --rose-accent: #f43f5e;
+            --rose-glow: rgba(244, 63, 94, 0.08);
+            --red-accent: #f43f5e;
+            --emerald-accent: #10b981;
+            --cyan-accent: #22d3ee;
+            --gold-accent: #fbbf24;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--card-border);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            background-color: rgba(244, 63, 94, 0.1);
+            color: var(--rose-accent);
+            border: 1px solid rgba(244, 63, 94, 0.3);
+            margin-bottom: 0.75rem;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .verdict-box {
+            background: linear-gradient(180deg, rgba(20, 22, 29, 0.95), rgba(15, 17, 23, 0.98));
+            border: 1px solid var(--card-border);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .verdict-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #e11d48, #f43f5e, #fb7185);
+        }
+
+        .verdict-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--rose-accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .verdict-section {
+            margin-bottom: 1.5rem;
+        }
+
+        .verdict-section h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .verdict-section ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .verdict-section li {
+            position: relative;
+            padding-left: 1.25rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .verdict-section li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--rose-accent);
+            font-weight: bold;
+        }
+
+        .highlight-action {
+            background: rgba(244, 63, 94, 0.1);
+            border-left: 4px solid var(--rose-accent);
+            padding: 1rem 1.25rem;
+            border-radius: 0 0.5rem 0.5rem 0;
+            margin-top: 1rem;
+        }
+
+        .highlight-action h4 {
+            color: var(--rose-accent);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.25rem;
+        }
+
+        .highlight-action p {
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .matrix-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .matrix-card {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .matrix-card .role {
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--rose-accent);
+            margin-bottom: 0.25rem;
+        }
+
+        .matrix-card .stance {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .matrix-card .focus {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        details {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 0.75rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        details[open] {
+            border-color: rgba(244, 63, 94, 0.3);
+        }
+
+        summary {
+            padding: 1rem 1.25rem;
+            font-weight: 700;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #ffffff;
+        }
+
+        summary:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+
+        summary .advisor-tag {
+            font-size: 0.75rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.25rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: var(--text-muted);
+        }
+
+        .detail-content {
+            padding: 1.25rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            font-size: 0.95rem;
+            color: var(--text-main);
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">LLM Council Session</span>
+            <h1>Seasonal Pattern Analysis Assessment</h1>
+            <p class="subtitle">Evaluated on 2026-07-25 • 5 Independent Advisors & Peer Synthesis</p>
+        </header>
+
+        <section class="verdict-box">
+            <div class="verdict-title">👑 Council Verdict & Executive Synthesis</div>
+
+            <div class="verdict-section">
+                <h3>Where the Council Agrees</h3>
+                <ul>
+                    <li><strong>Active Month Telemetry Bar Needed:</strong> Add status items in `SeasonalityShell.tsx` rendering Active Month Cycle (`📅 JULY CYCLE`), Active Ticker Scope (`COMI`), Seasonal Bias (`78% Bullish`), and Mode.</li>
+                    <li><strong>High-Conviction Leader Badges:</strong> Highlight top performers in `SeasonalityLeadersTable.tsx` with win rate ≥ 75%.</li>
+                    <li><strong>Test Suite Verification:</strong> Update `SeasonalityShell.test.tsx` and run all 4 seasonality test suites to ensure 100% pass rate.</li>
+                </ul>
+            </div>
+
+            <div class="verdict-section">
+                <h3>Where the Council Clashes</h3>
+                <p><strong>Active Month Telemetry Location:</strong> The Contrarian, Outsider & Executor insist on rendering Active Month Cycle directly in header status items, while The Expansionist wanted quarterly window dressing indicators first.</p>
+            </div>
+
+            <div class="verdict-section">
+                <h3>Key Blind Spot Uncovered</h3>
+                <p>Opening the page did not immediately show which calendar month was being evaluated for historical leader rankings until reading the sub-panel.</p>
+            </div>
+
+            <div class="highlight-action" style="border-left-color: #10b981; background: rgba(16, 185, 129, 0.1);">
+                <h4 style="color: #10b981;">Implementation Status — All Clashes Resolved (100% Complete)</h4>
+                <p>✅ Integrated Active Month Telemetry Bar • ✅ Added TOP LEADER ⚡ Badges • ✅ 17/17 unit tests passing cleanly.</p>
+            </div>
+        </section>
+
+        <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">Advisor Alignment Matrix</h2>
+        <section class="matrix-grid">
+            <div class="matrix-card">
+                <div class="role">The Contrarian</div>
+                <div class="stance">Critical</div>
+                <div class="focus">Identifies missing Active Month Cycle in header.</div>
+            </div>
+            <div class="matrix-card">
+                <div class="role">First Principles</div>
+                <div class="stance">Analytical</div>
+                <div class="focus">Demands seasonal win-rate ratio & month cycle visibility.</div>
+            </div>
+            <div class="matrix-card">
+                <div class="role">The Expansionist</div>
+                <div class="stance">Bullish</div>
+                <div class="focus">Advocates glowing leader badges & window dressing indicators.</div>
+            </div>
+            <div class="matrix-card">
+                <div class="role">The Outsider</div>
+                <div class="stance">Practical</div>
+                <div class="focus">Demands Active Month & Seasonal Bias in status items.</div>
+            </div>
+            <div class="matrix-card">
+                <div class="role">The Executor</div>
+                <div class="stance">Action-Oriented</div>
+                <div class="focus">Adds telemetry props to SeasonalityShell & verifies all 4 seasonality test suites.</div>
+            </div>
+        </section>
+
+        <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; color: #ffffff;">Individual Advisor Analyses</h2>
+
+        <details>
+            <summary>
+                <span>1. The Contrarian</span>
+                <span class="advisor-tag">Month Telemetry Gap</span>
+            </summary>
+            <div class="detail-content">
+                <p>Header status items previously omitted Current Calendar Month. Must display 📅 JULY CYCLE in CommandHeader.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span>2. The First Principles Thinker</span>
+                <span class="advisor-tag">Seasonal Statistics</span>
+            </summary>
+            <div class="detail-content">
+                <p>Surface active month cycle and seasonal win-rate probability directly in the command header.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span>3. The Expansionist</span>
+                <span class="advisor-tag">Cycle Cockpit</span>
+            </summary>
+            <div class="detail-content">
+                <p>Expand Seasonal Pattern Analysis into an Executive Cycle Cockpit with glowing leader badges.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span>4. The Outsider</span>
+                <span class="advisor-tag">Header Status</span>
+            </summary>
+            <div class="detail-content">
+                <p>Add Active Month Cycle and Seasonal Bias status items to SeasonalityShell.tsx for instant 1-second seasonal reads.</p>
+            </div>
+        </details>
+
+        <details>
+            <summary>
+                <span>5. The Executor</span>
+                <span class="advisor-tag">Engineering Fixes</span>
+            </summary>
+            <div class="detail-content">
+                <p>Add currentMonthLabel and activeBias props to SeasonalityShell.tsx and verify all 4 seasonality test suites.</p>
+            </div>
+        </details>
+
+        <footer>
+            Horus Analytics II • LLM Council Automated Report • Generated 2026-07-25
+        </footer>
+    </div>
+</body>
+</html>

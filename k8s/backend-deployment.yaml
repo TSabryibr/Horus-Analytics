@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: horus-backend
+  labels:
+    app: horus-backend
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: horus-backend
+  template:
+    metadata:
+      labels:
+        app: horus-backend
+    spec:
+      containers:
+      - name: backend
+        image: horus-analytics-backend:latest
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - configMapRef:
+            name: horus-config
+        - secretRef:
+            name: horus-secrets
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "1000m"
+            memory: "2Gi"
+        readinessProbe:
+          httpGet:
+            path: /api/v1/health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 10
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: horus-backend-svc
+spec:
+  selector:
+    app: horus-backend
+  ports:
+    - protocol: TCP
+      port: 8000
+      targetPort: 8000
+  type: ClusterIP

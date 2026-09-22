@@ -1,0 +1,40 @@
+{
+    "indices": {
+        "MAIN": [
+            "EURUSD=X",
+            "GBPUSD=X",
+            "USDJPY=X",
+            "AUDUSD=X",
+            "USDCAD=X",
+            "USDCHF=X",
+            "NZDUSD=X"
+        ],
+        "EGX30": [
+            "EURUSD=X",
+            "GBPUSD=X",
+            "USDJPY=X",
+            "AUDUSD=X",
+            "USDCAD=X",
+            "USDCHF=X",
+            "NZDUSD=X"
+        ]
+    },
+    "sectors": {
+        "EURUSD=X": "Major",
+        "GBPUSD=X": "Major",
+        "USDJPY=X": "Major",
+        "AUDUSD=X": "Major",
+        "USDCAD=X": "Major",
+        "USDCHF=X": "Major",
+        "NZDUSD=X": "Major"
+    },
+    "names": {
+        "EURUSD=X": "EUR/USD",
+        "GBPUSD=X": "GBP/USD",
+        "USDJPY=X": "USD/JPY",
+        "AUDUSD=X": "AUD/USD",
+        "USDCAD=X": "USD/CAD",
+        "USDCHF=X": "USD/CHF",
+        "NZDUSD=X": "NZD/USD"
+    }
+}

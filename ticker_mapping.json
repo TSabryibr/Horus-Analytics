@@ -1,0 +1,1178 @@
+{
+  "1": {
+    "file_id": "F1",
+    "match_score": 10
+  },
+  "11": {
+    "file_id": "F2",
+    "match_score": 8
+  },
+  "16": {
+    "file_id": "F3",
+    "match_score": 6
+  },
+  "18": {
+    "file_id": "F4",
+    "match_score": 10
+  },
+  "19": {
+    "file_id": "F5",
+    "match_score": 10
+  },
+  "2": {
+    "file_id": "F6",
+    "match_score": 5
+  },
+  "20": {
+    "file_id": "F7",
+    "match_score": 10
+  },
+  "21": {
+    "file_id": "F8",
+    "match_score": 10
+  },
+  "22": {
+    "file_id": "F9",
+    "match_score": 10
+  },
+  "23": {
+    "file_id": "F10",
+    "match_score": 10
+  },
+  "24": {
+    "file_id": "F11",
+    "match_score": 10
+  },
+  "25": {
+    "file_id": "F12",
+    "match_score": 10
+  },
+  "26": {
+    "file_id": "F13",
+    "match_score": 10
+  },
+  "27": {
+    "file_id": "F14",
+    "match_score": 10
+  },
+  "28": {
+    "file_id": "F15",
+    "match_score": 10
+  },
+  "7": {
+    "file_id": "F16",
+    "match_score": 8
+  },
+  "8": {
+    "file_id": "F17",
+    "match_score": 7
+  },
+  "AALR": {
+    "file_id": "F18",
+    "match_score": 10
+  },
+  "ABUK": {
+    "file_id": "F19",
+    "match_score": 10
+  },
+  "ACAMD": {
+    "file_id": "F20",
+    "match_score": 10
+  },
+  "ACAP": {
+    "file_id": "F21",
+    "match_score": 10
+  },
+  "ACGC": {
+    "file_id": "F22",
+    "match_score": 10
+  },
+  "ACRO": {
+    "file_id": "F23",
+    "match_score": 10
+  },
+  "ACTF": {
+    "file_id": "F24",
+    "match_score": 10
+  },
+  "ADCI": {
+    "file_id": "F25",
+    "match_score": 10
+  },
+  "ADIB": {
+    "file_id": "F26",
+    "match_score": 10
+  },
+  "ADPC": {
+    "file_id": "F27",
+    "match_score": 10
+  },
+  "ADRI": {
+    "file_id": "F28",
+    "match_score": 10
+  },
+  "AFDI": {
+    "file_id": "F29",
+    "match_score": 10
+  },
+  "AFMC": {
+    "file_id": "F30",
+    "match_score": 10
+  },
+  "AIDC": {
+    "file_id": "F31",
+    "match_score": 10
+  },
+  "AIFI": {
+    "file_id": "F32",
+    "match_score": 10
+  },
+  "AIFI_R1": {
+    "file_id": "F33",
+    "match_score": 6
+  },
+  "AIHC": {
+    "file_id": "F34",
+    "match_score": 10
+  },
+  "AJWA": {
+    "file_id": "F35",
+    "match_score": 10
+  },
+  "ALCN": {
+    "file_id": "F36",
+    "match_score": 10
+  },
+  "ALEX": {
+    "file_id": "F37",
+    "match_score": 10
+  },
+  "ALMF": {
+    "file_id": "F38",
+    "match_score": 10
+  },
+  "ALUM": {
+    "file_id": "F39",
+    "match_score": 10
+  },
+  "AMER": {
+    "file_id": "F40",
+    "match_score": 10
+  },
+  "AMES": {
+    "file_id": "F41",
+    "match_score": 10
+  },
+  "AMIA": {
+    "file_id": "F42",
+    "match_score": 10
+  },
+  "AMOC": {
+    "file_id": "F43",
+    "match_score": 10
+  },
+  "AMPI": {
+    "file_id": "F44",
+    "match_score": 10
+  },
+  "ANFI": {
+    "file_id": "F45",
+    "match_score": 10
+  },
+  "APPC": {
+    "file_id": "F46",
+    "match_score": 10
+  },
+  "APSW": {
+    "file_id": "F47",
+    "match_score": 10
+  },
+  "ARAB": {
+    "file_id": "F48",
+    "match_score": 10
+  },
+  "ARCC": {
+    "file_id": "F49",
+    "match_score": 10
+  },
+  "AREH": {
+    "file_id": "F50",
+    "match_score": 10
+  },
+  "ARPI": {
+    "file_id": "F51",
+    "match_score": 10
+  },
+  "ARVA": {
+    "file_id": "F52",
+    "match_score": 10
+  },
+  "ASCM": {
+    "file_id": "F53",
+    "match_score": 10
+  },
+  "ASPI": {
+    "file_id": "F54",
+    "match_score": 10
+  },
+  "ATLC": {
+    "file_id": "F55",
+    "match_score": 10
+  },
+  "ATQA": {
+    "file_id": "F56",
+    "match_score": 10
+  },
+  "AXPH": {
+    "file_id": "F57",
+    "match_score": 10
+  },
+  "BIDI": {
+    "file_id": "F59",
+    "match_score": 10
+  },
+  "BIGP": {
+    "file_id": "F60",
+    "match_score": 10
+  },
+  "BINV": {
+    "file_id": "F61",
+    "match_score": 10
+  },
+  "BIOC": {
+    "file_id": "F62",
+    "match_score": 10
+  },
+  "BONY": {
+    "file_id": "F63",
+    "match_score": 10
+  },
+  "BTFH": {
+    "file_id": "F65",
+    "match_score": 10
+  },
+  "CAED": {
+    "file_id": "F66",
+    "match_score": 10
+  },
+  "CANA": {
+    "file_id": "F67",
+    "match_score": 10
+  },
+  "CCAP": {
+    "file_id": "F73",
+    "match_score": 10
+  },
+  "CCRS": {
+    "file_id": "F75",
+    "match_score": 10
+  },
+  "CEFM": {
+    "file_id": "F76",
+    "match_score": 10
+  },
+  "CERA": {
+    "file_id": "F77",
+    "match_score": 10
+  },
+  "CFGH": {
+    "file_id": "F78",
+    "match_score": 10
+  },
+  "CICH": {
+    "file_id": "F79",
+    "match_score": 10
+  },
+  "CIEB": {
+    "file_id": "F80",
+    "match_score": 10
+  },
+  "CIRA": {
+    "file_id": "F81",
+    "match_score": 10
+  },
+  "CLHO": {
+    "file_id": "F82",
+    "match_score": 10
+  },
+  "CNFN": {
+    "file_id": "F83",
+    "match_score": 10
+  },
+  "COMI": {
+    "file_id": "F84",
+    "match_score": 10
+  },
+  "COPR": {
+    "file_id": "F85",
+    "match_score": 10
+  },
+  "COPR_R2": {
+    "file_id": "F86",
+    "match_score": 10
+  },
+  "COSG": {
+    "file_id": "F87",
+    "match_score": 10
+  },
+  "CPCI": {
+    "file_id": "F88",
+    "match_score": 10
+  },
+  "CPME": {
+    "file_id": "F89",
+    "match_score": 10
+  },
+  "CRST": {
+    "file_id": "F90",
+    "match_score": 10
+  },
+  "CSAG": {
+    "file_id": "F91",
+    "match_score": 10
+  },
+  "DAPH": {
+    "file_id": "F92",
+    "match_score": 10
+  },
+  "DCRC": {
+    "file_id": "F94",
+    "match_score": 10
+  },
+  "DEIN": {
+    "file_id": "F95",
+    "match_score": 10
+  },
+  "DGTZ": {
+    "file_id": "F96",
+    "match_score": 10
+  },
+  "DIFC": {
+    "file_id": "F97",
+    "match_score": 10
+  },
+  "DOMT": {
+    "file_id": "F98",
+    "match_score": 10
+  },
+  "DSCW": {
+    "file_id": "F99",
+    "match_score": 10
+  },
+  "DTPP": {
+    "file_id": "F100",
+    "match_score": 10
+  },
+  "EALR": {
+    "file_id": "F101",
+    "match_score": 9
+  },
+  "EASB": {
+    "file_id": "F102",
+    "match_score": 10
+  },
+  "EAST": {
+    "file_id": "F103",
+    "match_score": 10
+  },
+  "EBSC": {
+    "file_id": "F104",
+    "match_score": 10
+  },
+  "ECAP": {
+    "file_id": "F105",
+    "match_score": 10
+  },
+  "EDFM": {
+    "file_id": "F106",
+    "match_score": 10
+  },
+  "EEII": {
+    "file_id": "F107",
+    "match_score": 10
+  },
+  "EFIC": {
+    "file_id": "F108",
+    "match_score": 10
+  },
+  "EFID": {
+    "file_id": "F109",
+    "match_score": 10
+  },
+  "EFIH": {
+    "file_id": "F110",
+    "match_score": 10
+  },
+  "EGAL": {
+    "file_id": "F165",
+    "match_score": 10
+  },
+  "EGAS": {
+    "file_id": "F166",
+    "match_score": 10
+  },
+  "EGBE": {
+    "file_id": "F168",
+    "match_score": 10
+  },
+  "EGCH": {
+    "file_id": "F170",
+    "match_score": 10
+  },
+  "EGREF": {
+    "file_id": "F185",
+    "match_score": 10
+  },
+  "EGSA": {
+    "file_id": "F188",
+    "match_score": 10
+  },
+  "EGTS": {
+    "file_id": "F220",
+    "match_score": 10
+  },
+  "EGX100 EWI": {
+    "file_id": "F222",
+    "match_score": 10
+  },
+  "EGX30 CAPPED": {
+    "file_id": "F224",
+    "match_score": 10
+  },
+  "EGX30 TR": {
+    "file_id": "F225",
+    "match_score": 10
+  },
+  "EGX30": {
+    "file_id": "F223",
+    "match_score": 10
+  },
+  "EGX30ETF": {
+    "file_id": "F226",
+    "match_score": 10
+  },
+  "EGX35-LV": {
+    "file_id": "F227",
+    "match_score": 10
+  },
+  "EGX70 EWI": {
+    "file_id": "F228",
+    "match_score": 10
+  },
+  "EHDR": {
+    "file_id": "F229",
+    "match_score": 10
+  },
+  "EITP": {
+    "file_id": "F230",
+    "match_score": 10
+  },
+  "EIUD": {
+    "file_id": "F231",
+    "match_score": 10
+  },
+  "ELEC": {
+    "file_id": "F232",
+    "match_score": 10
+  },
+  "ELKA": {
+    "file_id": "F233",
+    "match_score": 10
+  },
+  "ELNA": {
+    "file_id": "F234",
+    "match_score": 10
+  },
+  "ELSH": {
+    "file_id": "F235",
+    "match_score": 10
+  },
+  "ELWA": {
+    "file_id": "F236",
+    "match_score": 10
+  },
+  "EMFD": {
+    "file_id": "F237",
+    "match_score": 10
+  },
+  "ENGC": {
+    "file_id": "F238",
+    "match_score": 10
+  },
+  "EOSB": {
+    "file_id": "F239",
+    "match_score": 10
+  },
+  "EPCO": {
+    "file_id": "F240",
+    "match_score": 10
+  },
+  "EPPK": {
+    "file_id": "F241",
+    "match_score": 10
+  },
+  "ESAC": {
+    "file_id": "F242",
+    "match_score": 10
+  },
+  "ESRS": {
+    "file_id": "F243",
+    "match_score": 10
+  },
+  "ETEL": {
+    "file_id": "F244",
+    "match_score": 10
+  },
+  "ETRS": {
+    "file_id": "F245",
+    "match_score": 10
+  },
+  "EXPA": {
+    "file_id": "F246",
+    "match_score": 10
+  },
+  "FAIT": {
+    "file_id": "F247",
+    "match_score": 10
+  },
+  "FAITA": {
+    "file_id": "F248",
+    "match_score": 10
+  },
+  "FERC": {
+    "file_id": "F249",
+    "match_score": 10
+  },
+  "FIRE": {
+    "file_id": "F250",
+    "match_score": 10
+  },
+  "FNAR": {
+    "file_id": "F251",
+    "match_score": 10
+  },
+  "FTNS": {
+    "file_id": "F252",
+    "match_score": 10
+  },
+  "FWRY": {
+    "file_id": "F253",
+    "match_score": 10
+  },
+  "GBCO": {
+    "file_id": "F254",
+    "match_score": 10
+  },
+  "GDWA": {
+    "file_id": "F255",
+    "match_score": 10
+  },
+  "GETO": {
+    "file_id": "F257",
+    "match_score": 10
+  },
+  "GGCC": {
+    "file_id": "F258",
+    "match_score": 10
+  },
+  "GGRN": {
+    "file_id": "F259",
+    "match_score": 10
+  },
+  "GIHD": {
+    "file_id": "F260",
+    "match_score": 10
+  },
+  "GMCI": {
+    "file_id": "F261",
+    "match_score": 10
+  },
+  "GOCO": {
+    "file_id": "F262",
+    "match_score": 10
+  },
+  "GPPL": {
+    "file_id": "F263",
+    "match_score": 10
+  },
+  "GRCA": {
+    "file_id": "F264",
+    "match_score": 10
+  },
+  "GSSC": {
+    "file_id": "F265",
+    "match_score": 10
+  },
+  "GTEX": {
+    "file_id": "F266",
+    "match_score": 10
+  },
+  "GTHE": {
+    "file_id": "F267",
+    "match_score": 10
+  },
+  "GTWL": {
+    "file_id": "F268",
+    "match_score": 10
+  },
+  "HBCO": {
+    "file_id": "F270",
+    "match_score": 10
+  },
+  "HCFI": {
+    "file_id": "F271",
+    "match_score": 10
+  },
+  "HDBK": {
+    "file_id": "F272",
+    "match_score": 10
+  },
+  "HELI": {
+    "file_id": "F274",
+    "match_score": 10
+  },
+  "HRHO": {
+    "file_id": "F275",
+    "match_score": 10
+  },
+  "IBCT": {
+    "file_id": "F276",
+    "match_score": 10
+  },
+  "ICFC": {
+    "file_id": "F277",
+    "match_score": 10
+  },
+  "ICID": {
+    "file_id": "F278",
+    "match_score": 10
+  },
+  "ICLE": {
+    "file_id": "F279",
+    "match_score": 10
+  },
+  "ICMI": {
+    "file_id": "F280",
+    "match_score": 10
+  },
+  "IDRE": {
+    "file_id": "F281",
+    "match_score": 10
+  },
+  "IEEC": {
+    "file_id": "F282",
+    "match_score": 10
+  },
+  "IFAP": {
+    "file_id": "F283",
+    "match_score": 10
+  },
+  "INEG": {
+    "file_id": "F284",
+    "match_score": 10
+  },
+  "INFI": {
+    "file_id": "F285",
+    "match_score": 10
+  },
+  "IRAX": {
+    "file_id": "F286",
+    "match_score": 10
+  },
+  "IRON": {
+    "file_id": "F287",
+    "match_score": 10
+  },
+  "ISMA": {
+    "file_id": "F288",
+    "match_score": 10
+  },
+  "ISMQ": {
+    "file_id": "F289",
+    "match_score": 10
+  },
+  "ISPH": {
+    "file_id": "F290",
+    "match_score": 10
+  },
+  "JUFO": {
+    "file_id": "F291",
+    "match_score": 10
+  },
+  "KABO": {
+    "file_id": "F292",
+    "match_score": 10
+  },
+  "KASABF": {
+    "file_id": "F293",
+    "match_score": 10
+  },
+  "KWIN": {
+    "file_id": "F296",
+    "match_score": 10
+  },
+  "KZPC": {
+    "file_id": "F297",
+    "match_score": 10
+  },
+  "LCSW": {
+    "file_id": "F298",
+    "match_score": 10
+  },
+  "LUTS": {
+    "file_id": "F299",
+    "match_score": 10
+  },
+  "MAAL": {
+    "file_id": "F300",
+    "match_score": 10
+  },
+  "MASR": {
+    "file_id": "F301",
+    "match_score": 10
+  },
+  "MBEG": {
+    "file_id": "F302",
+    "match_score": 10
+  },
+  "MBSC": {
+    "file_id": "F303",
+    "match_score": 10
+  },
+  "MCQE": {
+    "file_id": "F304",
+    "match_score": 10
+  },
+  "MCRO": {
+    "file_id": "F305",
+    "match_score": 10
+  },
+  "MEGM": {
+    "file_id": "F306",
+    "match_score": 10
+  },
+  "MENA": {
+    "file_id": "F307",
+    "match_score": 10
+  },
+  "MEPA": {
+    "file_id": "F308",
+    "match_score": 10
+  },
+  "MFPC": {
+    "file_id": "F309",
+    "match_score": 10
+  },
+  "MFSC": {
+    "file_id": "F310",
+    "match_score": 10
+  },
+  "MHOT": {
+    "file_id": "F311",
+    "match_score": 10
+  },
+  "MICH": {
+    "file_id": "F312",
+    "match_score": 10
+  },
+  "MILS": {
+    "file_id": "F313",
+    "match_score": 10
+  },
+  "MIPH": {
+    "file_id": "F314",
+    "match_score": 10
+  },
+  "MISR": {
+    "file_id": "F315",
+    "match_score": 10
+  },
+  "MKIT": {
+    "file_id": "F316",
+    "match_score": 7
+  },
+  "MMAT": {
+    "file_id": "F317",
+    "match_score": 9
+  },
+  "MOED": {
+    "file_id": "F318",
+    "match_score": 10
+  },
+  "MOIL": {
+    "file_id": "F319",
+    "match_score": 10
+  },
+  "MOIN": {
+    "file_id": "F320",
+    "match_score": 10
+  },
+  "MOSC": {
+    "file_id": "F321",
+    "match_score": 10
+  },
+  "MPCI": {
+    "file_id": "F322",
+    "match_score": 10
+  },
+  "MPCO": {
+    "file_id": "F323",
+    "match_score": 10
+  },
+  "MPRC": {
+    "file_id": "F324",
+    "match_score": 10
+  },
+  "MTIE": {
+    "file_id": "F325",
+    "match_score": 10
+  },
+  "NAHO": {
+    "file_id": "F326",
+    "match_score": 10
+  },
+  "NAPR": {
+    "file_id": "F327",
+    "match_score": 10
+  },
+  "NARE": {
+    "file_id": "F328",
+    "match_score": 10
+  },
+  "NBKE": {
+    "file_id": "F329",
+    "match_score": 10
+  },
+  "NCGC": {
+    "file_id": "F331",
+    "match_score": 10
+  },
+  "NDRL": {
+    "file_id": "F332",
+    "match_score": 10
+  },
+  "NEDA": {
+    "file_id": "F333",
+    "match_score": 10
+  },
+  "NHPS": {
+    "file_id": "F334",
+    "match_score": 10
+  },
+  "NINH": {
+    "file_id": "F335",
+    "match_score": 10
+  },
+  "NIPH": {
+    "file_id": "F336",
+    "match_score": 10
+  },
+  "OBRI": {
+    "file_id": "F337",
+    "match_score": 10
+  },
+  "OCDI": {
+    "file_id": "F338",
+    "match_score": 10
+  },
+  "OCPH": {
+    "file_id": "F339",
+    "match_score": 10
+  },
+  "ODIN": {
+    "file_id": "F340",
+    "match_score": 10
+  },
+  "OFH": {
+    "file_id": "F341",
+    "match_score": 10
+  },
+  "OIH": {
+    "file_id": "F342",
+    "match_score": 10
+  },
+  "OLFI": {
+    "file_id": "F343",
+    "match_score": 10
+  },
+  "ORAS": {
+    "file_id": "F344",
+    "match_score": 10
+  },
+  "ORHD": {
+    "file_id": "F345",
+    "match_score": 10
+  },
+  "ORWE": {
+    "file_id": "F346",
+    "match_score": 10
+  },
+  "PACH": {
+    "file_id": "F347",
+    "match_score": 10
+  },
+  "PHAR": {
+    "file_id": "F348",
+    "match_score": 10
+  },
+  "PHDC": {
+    "file_id": "F349",
+    "match_score": 10
+  },
+  "PHTV": {
+    "file_id": "F351",
+    "match_score": 10
+  },
+  "POUL": {
+    "file_id": "F353",
+    "match_score": 10
+  },
+  "PRCL": {
+    "file_id": "F354",
+    "match_score": 10
+  },
+  "PRDC": {
+    "file_id": "F355",
+    "match_score": 10
+  },
+  "PTCC": {
+    "file_id": "F357",
+    "match_score": 10
+  },
+  "QNBE": {
+    "file_id": "F358",
+    "match_score": 10
+  },
+  "RACC": {
+    "file_id": "F359",
+    "match_score": 10
+  },
+  "RAKT": {
+    "file_id": "F360",
+    "match_score": 10
+  },
+  "RAYA": {
+    "file_id": "F361",
+    "match_score": 10
+  },
+  "RKAZ": {
+    "file_id": "F362",
+    "match_score": 10
+  },
+  "RMDA": {
+    "file_id": "F363",
+    "match_score": 10
+  },
+  "RMTV": {
+    "file_id": "F364",
+    "match_score": 10
+  },
+  "ROTO": {
+    "file_id": "F365",
+    "match_score": 10
+  },
+  "RREI": {
+    "file_id": "F366",
+    "match_score": 10
+  },
+  "RTVC": {
+    "file_id": "F367",
+    "match_score": 10
+  },
+  "RUBX": {
+    "file_id": "F368",
+    "match_score": 10
+  },
+  "SAIB": {
+    "file_id": "F369",
+    "match_score": 9
+  },
+  "SAUD": {
+    "file_id": "F370",
+    "match_score": 10
+  },
+  "SCEM": {
+    "file_id": "F371",
+    "match_score": 10
+  },
+  "SCFM": {
+    "file_id": "F372",
+    "match_score": 10
+  },
+  "SCTS": {
+    "file_id": "F373",
+    "match_score": 10
+  },
+  "SDTI": {
+    "file_id": "F374",
+    "match_score": 10
+  },
+  "SEIG": {
+    "file_id": "F375",
+    "match_score": 10
+  },
+  "SHARIAH": {
+    "file_id": "F378",
+    "match_score": 10
+  },
+  "SIMO": {
+    "file_id": "F379",
+    "match_score": 10
+  },
+  "SIPC": {
+    "file_id": "F380",
+    "match_score": 10
+  },
+  "SKPC": {
+    "file_id": "F381",
+    "match_score": 10
+  },
+  "SMFR": {
+    "file_id": "F384",
+    "match_score": 10
+  },
+  "SMPP": {
+    "file_id": "F385",
+    "match_score": 10
+  },
+  "SNFC": {
+    "file_id": "F386",
+    "match_score": 10
+  },
+  "SNFI": {
+    "file_id": "F387",
+    "match_score": 10
+  },
+  "SPHT": {
+    "file_id": "F388",
+    "match_score": 10
+  },
+  "SPIN": {
+    "file_id": "F389",
+    "match_score": 10
+  },
+  "SPMD": {
+    "file_id": "F390",
+    "match_score": 10
+  },
+  "SUCE": {
+    "file_id": "F391",
+    "match_score": 10
+  },
+  "SUGR": {
+    "file_id": "F392",
+    "match_score": 10
+  },
+  "SVCE": {
+    "file_id": "F393",
+    "match_score": 10
+  },
+  "SWDY": {
+    "file_id": "F394",
+    "match_score": 10
+  },
+  "TALM": {
+    "file_id": "F395",
+    "match_score": 10
+  },
+  "TAMAYUZ": {
+    "file_id": "F396",
+    "match_score": 10
+  },
+  "TANM": {
+    "file_id": "F397",
+    "match_score": 10
+  },
+  "TAQA": {
+    "file_id": "F398",
+    "match_score": 10
+  },
+  "TMGH": {
+    "file_id": "F399",
+    "match_score": 10
+  },
+  "TORA": {
+    "file_id": "F400",
+    "match_score": 10
+  },
+  "TRST": {
+    "file_id": "F401",
+    "match_score": 10
+  },
+  "TRTO": {
+    "file_id": "F402",
+    "match_score": 10
+  },
+  "TWSA": {
+    "file_id": "F404",
+    "match_score": 10
+  },
+  "UASG": {
+    "file_id": "F405",
+    "match_score": 10
+  },
+  "UBEE": {
+    "file_id": "F406",
+    "match_score": 10
+  },
+  "UEFM": {
+    "file_id": "F407",
+    "match_score": 10
+  },
+  "UEGC": {
+    "file_id": "F408",
+    "match_score": 10
+  },
+  "UNIP": {
+    "file_id": "F409",
+    "match_score": 10
+  },
+  "UNIT": {
+    "file_id": "F410",
+    "match_score": 10
+  },
+  "UPMS": {
+    "file_id": "F411",
+    "match_score": 10
+  },
+  "UTOP": {
+    "file_id": "F412",
+    "match_score": 10
+  },
+  "VALU": {
+    "file_id": "F413",
+    "match_score": 10
+  },
+  "VERT": {
+    "file_id": "F414",
+    "match_score": 10
+  },
+  "VLMR": {
+    "file_id": "F415",
+    "match_score": 10
+  },
+  "VLMRA": {
+    "file_id": "F416",
+    "match_score": 10
+  },
+  "WATP": {
+    "file_id": "F417",
+    "match_score": 10
+  },
+  "WCDF": {
+    "file_id": "F418",
+    "match_score": 10
+  },
+  "WKOL": {
+    "file_id": "F419",
+    "match_score": 10
+  },
+  "ZEOT": {
+    "file_id": "F420",
+    "match_score": 10
+  },
+  "ZMID": {
+    "file_id": "F421",
+    "match_score": 10
+  }
+}

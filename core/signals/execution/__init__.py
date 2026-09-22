@@ -1,0 +1,106 @@
+"""
+SIGNALS EXECUTION PACKAGE
+=========================
+Modular execution pipeline for signals, risk gating, and portfolio order lifecycle.
+"""
+
+from .guards import (
+    _HEAT_BLOCK_LOG_STATE,
+    _LIVE_GUARD_LOG_STATE,
+    _log_live_guard_block,
+    _record_heat_block,
+    _check_portfolio_heat,
+    _safe_setting_float,
+    _safe_setting_int,
+    _emit_operator_event,
+    _manual_override_abuse_state,
+    _compute_realized_loss_state,
+    _check_operator_lockout,
+)
+
+from .sizing import (
+    _positive_float,
+    _resolve_account_size,
+    _calculate_shares,
+    _check_velocity_limit,
+    _check_execution_capacity,
+    _calculate_gap_pct,
+)
+
+from .risk_gates import (
+    _check_nonzero_cost_assumptions,
+    _compute_crisis_correlation,
+    _compute_liquidity_exit_capacity,
+    _check_live_risk_contract,
+    _check_entry_gate,
+    _check_whale_trap,
+    _check_sovereign_confluence,
+    _check_correlation,
+    _check_sector_limit,
+    _is_regime_filter_enabled,
+    _check_macro_regime,
+    _run_risk_gates,
+)
+
+from .orders import (
+    _send_main_channel_signal_message,
+    _get_trigger_source,
+    _resolve_lane,
+    _resolve_execution_portfolio,
+    _find_cross_portfolio_signal_position,
+    _get_existing_position_update_skip,
+    _get_rec_json,
+    _get_next_open_price,
+    _validate_signal,
+    _persist_execution,
+    _upsert_execution_attribution,
+    _sync_execution_attribution_state,
+    _handle_update,
+    _handle_open,
+)
+
+__all__ = [
+    "_HEAT_BLOCK_LOG_STATE",
+    "_LIVE_GUARD_LOG_STATE",
+    "_log_live_guard_block",
+    "_record_heat_block",
+    "_check_portfolio_heat",
+    "_safe_setting_float",
+    "_safe_setting_int",
+    "_emit_operator_event",
+    "_manual_override_abuse_state",
+    "_compute_realized_loss_state",
+    "_check_operator_lockout",
+    "_positive_float",
+    "_resolve_account_size",
+    "_calculate_shares",
+    "_check_velocity_limit",
+    "_check_execution_capacity",
+    "_calculate_gap_pct",
+    "_check_nonzero_cost_assumptions",
+    "_compute_crisis_correlation",
+    "_compute_liquidity_exit_capacity",
+    "_check_live_risk_contract",
+    "_check_entry_gate",
+    "_check_whale_trap",
+    "_check_sovereign_confluence",
+    "_check_correlation",
+    "_check_sector_limit",
+    "_is_regime_filter_enabled",
+    "_check_macro_regime",
+    "_run_risk_gates",
+    "_send_main_channel_signal_message",
+    "_get_trigger_source",
+    "_resolve_lane",
+    "_resolve_execution_portfolio",
+    "_find_cross_portfolio_signal_position",
+    "_get_existing_position_update_skip",
+    "_get_rec_json",
+    "_get_next_open_price",
+    "_validate_signal",
+    "_persist_execution",
+    "_upsert_execution_attribution",
+    "_sync_execution_attribution_state",
+    "_handle_update",
+    "_handle_open",
+]

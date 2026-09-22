@@ -1,0 +1,19 @@
+# Horus Analytics II - Global AI Coding Instructions
+
+## Design Context
+
+### Users
+High-intensity quantitative operators navigating the highly volatile, manipulated EGX environment. The user requires instantaneous analytical clairvoyance to survive and thrive; they need a system that functions as the "eye of the storm."
+
+### Brand Personality
+Cold, predatory omniscience. Mechanical detachment, supreme clarity, and absolute control. The brand is a military-grade financial weapon, not a toy or a game.
+
+### Aesthetic Direction
+An institutional, futuristic industrial terminal utilizing Slate 950. 
+- **Palette Rules**: No "hacker green." Utilize muted, semantic contrast: crisp cyan/teal for accumulation and supportive signals, and sharp burnt coral/amber for traps, conflicts, and blocked executions.
+- **Anti-References**: Absolutely no Web3/bubbly aesthetics, neon glowing borders, retail crypto casinos, celebratory confetti animations, or Robinhood-style gamification.
+
+### Design Principles
+1. **Mechanical Detachment**: UIs should surgically expose data. Never use frantic flashing animations or panic-inducing visuals; highlight targets coldly and clinically.
+2. **Deterministic Clarity**: Information hierarchy must never rely strictly on color gradients. Always supplement statuses with high-contrast text tags (e.g., `[WATCH_ONLY]`, `[CONFLICT]`) for maximal structural readability.
+3. **Data Density & Contrast**: Maximize focal contrast against JetBrains Mono arrays interacting with the dark Slate backgrounds. Every pixel must serve the data.

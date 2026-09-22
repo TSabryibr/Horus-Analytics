@@ -1,0 +1,25 @@
+{
+  "name": "projects/6427004444860297390",
+  "projectId": "6427004444860297390",
+  "title": "Horus Analytics II Frontend Replacement",
+  "visibility": "PRIVATE",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "DARK",
+    "font": "INTER",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#25d1f4",
+    "saturation": 2
+  },
+  "screens": {
+    "dashboard": {
+      "id": "1a681b41a01e4e7dbc453040dd8d4363",
+      "sourceScreen": "projects/6427004444860297390/screens/1a681b41a01e4e7dbc453040dd8d4363",
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 1024
+    }
+  }
+}

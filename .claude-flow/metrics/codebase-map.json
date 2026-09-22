@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-08-26T09:38:34.411Z",
+  "projectRoot": "C:\\Users\\TSabr\\Horus\\Horus-Analytics-II",
+  "structure": {
+    "hasPackageJson": true,
+    "hasTsConfig": false,
+    "hasClaudeConfig": true,
+    "hasClaudeFlow": true
+  },
+  "scannedAt": 1787737114412
+}

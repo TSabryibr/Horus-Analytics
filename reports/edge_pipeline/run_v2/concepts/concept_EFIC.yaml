@@ -1,0 +1,20 @@
+concept_id: EG_EFIC_WHALE_TRAP
+entry_rules:
+- Price makes 20-day swing low
+- Close sitting back above swing low (failed breakdown)
+- OBV slope is positive over last 20 bars (Accumulation)
+pine_snippet: '
+
+  // Whale Trap Logic
+
+  swingLow = ta.lowest(low[1], 20)
+
+  isTrap = low < swingLow and close > swingLow
+
+  obv = ta.cum(math.sign(ta.change(close)) * volume)
+
+  isAccum = ta.linreg(obv, 20, 0) > 0
+
+  entry = isTrap and isAccum
+
+  '

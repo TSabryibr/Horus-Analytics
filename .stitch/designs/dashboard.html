@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Horus Analytics Command Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#25d1f4",
+                        "background-light": "#f5f8f8",
+                        "background-dark": "#0B0E14",
+                        "border-subtle": "rgba(37, 209, 244, 0.1)",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        .glass-sidebar {
+            background: rgba(11, 14, 20, 0.8);
+            backdrop-filter: blur(12px);
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .widget-card {
+            background: rgba(16, 31, 34, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .widget-card:hover {
+            border-color: rgba(37, 209, 244, 0.3);
+            background: rgba(16, 31, 34, 0.6);
+        }
+        .glow-cyan { text-shadow: 0 0 10px rgba(37, 209, 244, 0.5); }
+        .glow-emerald { text-shadow: 0 0 10px rgba(16, 185, 129, 0.5); }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(37, 209, 244, 0.2); border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex overflow-hidden">
+<!-- Left Sidebar -->
+<aside class="w-64 glass-sidebar h-screen flex flex-col shrink-0">
+<div class="p-6 flex items-center gap-3">
+<div class="size-8 bg-primary rounded flex items-center justify-center text-background-dark">
+<span class="material-symbols-outlined font-bold">visibility</span>
+</div>
+<h1 class="text-xl font-bold tracking-tighter uppercase text-slate-100">Horus</h1>
+</div>
+<nav class="flex-1 px-4 py-4 space-y-1">
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg bg-primary/10 text-primary group cursor-pointer">
+<span class="material-symbols-outlined text-xl">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">description</span>
+<span class="text-sm font-medium">AI Report</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">radar</span>
+<span class="text-sm font-medium">Scanner</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">vitals</span>
+<span class="text-sm font-medium">Strategy</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">terminal</span>
+<span class="text-sm font-medium">Simulation</span>
+</div>
+<div class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-slate-400 hover:text-slate-100 hover:bg-white/5 transition-all cursor-pointer">
+<span class="material-symbols-outlined text-xl">newspaper</span>
+<span class="text-sm font-medium">News</span>
+</div>
+</nav>
+<div class="p-4 border-t border-white/5">
+<div class="bg-gradient-to-br from-primary/20 to-transparent p-4 rounded-xl border border-primary/20">
+<p class="text-xs text-primary font-bold mb-1 tracking-wider uppercase">Pro Account</p>
+<p class="text-xs text-slate-400 mb-3">Get advanced real-time signals.</p>
+<button class="w-full bg-primary hover:bg-primary/80 text-background-dark text-xs font-bold py-2 rounded transition-colors">Upgrade Plan</button>
+</div>
+</div>
+</aside>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col h-screen overflow-y-auto custom-scrollbar">
+<!-- Header -->
+<header class="h-16 border-b border-white/5 px-8 flex items-center justify-between shrink-0 bg-background-dark/50 backdrop-blur-md sticky top-0 z-10">
+<div class="flex items-center gap-6 flex-1">
+<div class="relative w-96">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-lg">search</span>
+<input class="w-full bg-white/5 border-none rounded-lg pl-10 pr-4 py-2 text-sm text-slate-200 placeholder:text-slate-600 focus:ring-1 focus:ring-primary/50" placeholder="Search markets, assets, or symbols..." type="text"/>
+</div>
+<div class="flex items-center gap-2 border-l border-white/10 pl-6">
+<span class="size-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-xs font-semibold text-emerald-500 glow-emerald uppercase tracking-widest">Market Status: Bullish</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center p-2 text-slate-400 hover:text-slate-100">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="h-8 w-[1px] bg-white/10"></div>
+<div class="flex items-center gap-3">
+<div class="text-right">
+<p class="text-xs font-bold text-slate-100">Alex Vance</p>
+<p class="text-[10px] text-slate-500">Tier 3 Analyst</p>
+</div>
+<div class="size-9 rounded-full bg-slate-800 border border-white/10 overflow-hidden">
+<img alt="User avatar" data-alt="Minimalist professional user profile avatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJByoRnvVr2j70uJuvCI9M6AFBs8rnTx3YhcvFmgFmakhi90ABmyfHDYw3M0s_tLfCxH7EK6nvAmTL5ZoAjugpXxi5caDKNE5J4S8IaPozbjlMlJk9heXEQ_JAcANgajc7ePy19Qyq5p3mT84Ec94OZs_i0KEuI43Dx5KHXZNTa7ZXdiN-Be3IZuTz8vzkdmFrBl6kTfYU32QDS9wcTIKDOrKVW2KJBF2Ggwv_bwd5VF3Nwp5mDyV8m4cOy7v1rJ4v6KhWA6zKD0c"/>
+</div>
+</div>
+</div>
+</header>
+<!-- Dashboard Grid -->
+<div class="p-8 grid grid-cols-12 gap-6">
+<!-- Market Overview Chart -->
+<div class="col-span-12 lg:col-span-8 widget-card rounded-xl p-6 flex flex-col gap-4">
+<div class="flex items-center justify-between mb-2">
+<div>
+<h3 class="text-lg font-bold text-slate-100">Market Overview</h3>
+<p class="text-xs text-slate-500">S&amp;P 500 Index AI Projection</p>
+</div>
+<div class="flex gap-2">
+<button class="px-3 py-1 rounded bg-white/5 text-[10px] font-bold text-slate-400 hover:text-slate-100">1H</button>
+<button class="px-3 py-1 rounded bg-primary text-[10px] font-bold text-background-dark">1D</button>
+<button class="px-3 py-1 rounded bg-white/5 text-[10px] font-bold text-slate-400 hover:text-slate-100">1W</button>
+</div>
+</div>
+<div class="flex-1 min-h-[300px] relative">
+<!-- Candlestick Simulation Placeholder -->
+<div class="absolute inset-0 flex items-end gap-2 px-2 pb-6 opacity-30">
+<div class="flex-1 bg-emerald-500/20 border-t border-emerald-500 h-[40%]"></div>
+<div class="flex-1 bg-emerald-500/20 border-t border-emerald-500 h-[45%]"></div>
+<div class="flex-1 bg-rose-500/20 border-t border-rose-500 h-[35%]"></div>
+<div class="flex-1 bg-emerald-500/20 border-t border-emerald-500 h-[50%]"></div>
+<div class="flex-1 bg-emerald-500/20 border-t border-emerald-500 h-[65%]"></div>
+<div class="flex-1 bg-rose-500/20 border-t border-rose-500 h-[55%]"></div>
+<div class="flex-1 bg-emerald-500/20 border-t border-emerald-500 h-[75%]"></div>
+<div class="flex-1 bg-emerald-500/20 border-t border-emerald-500 h-[80%]"></div>
+</div>
+<!-- Neon AI Prediction Line Overlay -->
+<svg class="absolute inset-0 w-full h-full" preserveaspectratio="none">
+<path class="glow-cyan" d="M0 250 Q 100 220 200 240 T 400 180 T 600 150 T 800 100" fill="none" stroke="#25d1f4" stroke-width="2"></path>
+<circle class="glow-cyan" cx="800" cy="100" fill="#25d1f4" r="4"></circle>
+</svg>
+</div>
+<div class="flex justify-between items-center pt-4 border-t border-white/5">
+<div class="flex gap-6">
+<div class="flex flex-col">
+<span class="text-[10px] uppercase text-slate-500 font-bold">Current Price</span>
+<span class="text-sm font-bold text-slate-100">$5,137.08 <span class="text-emerald-500 ml-1">+0.42%</span></span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase text-slate-500 font-bold">24H High</span>
+<span class="text-sm font-bold text-slate-100">$5,149.20</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] uppercase text-slate-500 font-bold">AI Forecast (7d)</span>
+<span class="text-sm font-bold text-primary glow-cyan">$5,280.50</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Risk Assessment -->
+<div class="col-span-12 lg:col-span-4 widget-card rounded-xl p-6 flex flex-col justify-between">
+<div class="mb-4">
+<h3 class="text-lg font-bold text-slate-100">Risk Assessment</h3>
+<p class="text-xs text-slate-500">Live Portfolio Exposure</p>
+</div>
+<div class="relative flex items-center justify-center py-6">
+<!-- Semi-circle Gauge -->
+<svg class="w-full max-w-[200px]" viewbox="0 0 100 50">
+<path d="M 10 50 A 40 40 0 0 1 90 50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-linecap="round" stroke-width="8"></path>
+<path d="M 10 50 A 40 40 0 0 1 70 20" fill="none" stroke="url(#riskGradient)" stroke-linecap="round" stroke-width="8"></path>
+<defs>
+<lineargradient id="riskGradient" x1="0%" x2="100%" y1="0%" y2="0%">
+<stop offset="0%" stop-color="#10b981"></stop>
+<stop offset="50%" stop-color="#f59e0b"></stop>
+<stop offset="100%" stop-color="#ef4444"></stop>
+</lineargradient>
+</defs>
+</svg>
+<div class="absolute bottom-4 text-center">
+<p class="text-3xl font-black text-slate-100">Moderate</p>
+<p class="text-[10px] font-bold text-slate-500 uppercase tracking-tighter">72% Volatility index</p>
+</div>
+</div>
+<div class="space-y-3 mt-4">
+<div class="flex justify-between items-center text-xs">
+<span class="text-slate-400">Systemic Risk</span>
+<span class="text-emerald-400 font-bold">Low</span>
+</div>
+<div class="w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-emerald-400 h-full w-1/4"></div>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="text-slate-400">Market Liquidity</span>
+<span class="text-primary font-bold">Optimal</span>
+</div>
+<div class="w-full bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-3/4"></div>
+</div>
+</div>
+</div>
+<!-- Top AI Signals -->
+<div class="col-span-12 lg:col-span-8 widget-card rounded-xl overflow-hidden">
+<div class="p-6 border-b border-white/5 flex items-center justify-between">
+<h3 class="text-lg font-bold text-slate-100">Top AI Signals</h3>
+<button class="text-xs text-primary font-bold hover:underline">View All Assets</button>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-white/5 text-[10px] font-black uppercase text-slate-500 tracking-widest">
+<th class="px-6 py-4">Ticker</th>
+<th class="px-6 py-4">Signal</th>
+<th class="px-6 py-4 text-center">Confidence</th>
+<th class="px-6 py-4">Price Target</th>
+<th class="px-6 py-4 text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-white/5 text-sm">
+<tr class="hover:bg-white/5 transition-colors cursor-pointer group">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="font-bold text-slate-100">NVDA</span>
+<span class="text-[10px] text-slate-500">NVIDIA Corp.</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-emerald-500/10 text-emerald-500 text-[10px] font-black rounded-full border border-emerald-500/20">STRONG BUY</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex flex-col items-center gap-1">
+<span class="text-slate-100 font-medium">94%</span>
+<div class="w-16 bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[94%]"></div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-300 font-mono">$950.00</td>
+<td class="px-6 py-4 text-right">
+<button class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-lg text-xs font-bold hover:bg-primary hover:text-background-dark transition-all">Trade</button>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors cursor-pointer group">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="font-bold text-slate-100">TSLA</span>
+<span class="text-[10px] text-slate-500">Tesla, Inc.</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-rose-500/10 text-rose-500 text-[10px] font-black rounded-full border border-rose-500/20">SELL</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex flex-col items-center gap-1">
+<span class="text-slate-100 font-medium">82%</span>
+<div class="w-16 bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-rose-500 h-full w-[82%]"></div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-300 font-mono">$160.00</td>
+<td class="px-6 py-4 text-right">
+<button class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-lg text-xs font-bold hover:bg-primary hover:text-background-dark transition-all">Trade</button>
+</td>
+</tr>
+<tr class="hover:bg-white/5 transition-colors cursor-pointer group">
+<td class="px-6 py-4">
+<div class="flex flex-col">
+<span class="font-bold text-slate-100">AMD</span>
+<span class="text-[10px] text-slate-500">AMD Corp.</span>
+</div>
+</td>
+<td class="px-6 py-4">
+<span class="px-3 py-1 bg-emerald-500/10 text-emerald-500 text-[10px] font-black rounded-full border border-emerald-500/20">BUY</span>
+</td>
+<td class="px-6 py-4">
+<div class="flex flex-col items-center gap-1">
+<span class="text-slate-100 font-medium">89%</span>
+<div class="w-16 bg-white/5 h-1 rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[89%]"></div>
+</div>
+</div>
+</td>
+<td class="px-6 py-4 text-slate-300 font-mono">$210.00</td>
+<td class="px-6 py-4 text-right">
+<button class="px-4 py-1.5 bg-white/5 border border-white/10 rounded-lg text-xs font-bold hover:bg-primary hover:text-background-dark transition-all">Trade</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Recent News -->
+<div class="col-span-12 lg:col-span-4 widget-card rounded-xl flex flex-col">
+<div class="p-6 border-b border-white/5">
+<h3 class="text-lg font-bold text-slate-100">Live News Feed</h3>
+</div>
+<div class="flex-1 overflow-y-auto custom-scrollbar p-6 space-y-6">
+<div class="flex gap-4">
+<div class="shrink-0 text-xs font-bold text-slate-500 mt-1">12:04</div>
+<div class="space-y-1">
+<h4 class="text-sm font-bold text-slate-100 hover:text-primary cursor-pointer leading-snug">Federal Reserve hints at interest rate stability through Q3</h4>
+<p class="text-xs text-slate-500">Sources say FOMC minutes will reflect hawkish tone on inflation targets...</p>
+<div class="flex gap-2 pt-1">
+<span class="text-[10px] px-2 py-0.5 bg-white/5 rounded text-slate-400 uppercase font-black">Macro</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="shrink-0 text-xs font-bold text-slate-500 mt-1">11:45</div>
+<div class="space-y-1">
+<h4 class="text-sm font-bold text-slate-100 hover:text-primary cursor-pointer leading-snug">Tech Rally: AI chip demand continues to outpace supply chain capacity</h4>
+<p class="text-xs text-slate-500">Major suppliers reported 40% growth in backlog orders for next-gen H100 cores...</p>
+<div class="flex gap-2 pt-1">
+<span class="text-[10px] px-2 py-0.5 bg-emerald-500/10 rounded text-emerald-500 uppercase font-black">Bullish</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="shrink-0 text-xs font-bold text-slate-500 mt-1">11:12</div>
+<div class="space-y-1">
+<h4 class="text-sm font-bold text-slate-100 hover:text-primary cursor-pointer leading-snug">Oil prices stabilize after sudden geopolitical shift in MENA region</h4>
+<p class="text-xs text-slate-500">WTI crude futures remained flat at $78.40 as market digests news...</p>
+<div class="flex gap-2 pt-1">
+<span class="text-[10px] px-2 py-0.5 bg-white/5 rounded text-slate-400 uppercase font-black">Commodities</span>
+</div>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="shrink-0 text-xs font-bold text-slate-500 mt-1">10:30</div>
+<div class="space-y-1">
+<h4 class="text-sm font-bold text-slate-100 hover:text-primary cursor-pointer leading-snug">Bitcoin hits new YTD high as ETF inflows reach record levels</h4>
+<p class="text-xs text-slate-500">Institutional appetite for digital assets shows no signs of slowing down...</p>
+<div class="flex gap-2 pt-1">
+<span class="text-[10px] px-2 py-0.5 bg-emerald-500/10 rounded text-emerald-500 uppercase font-black">Crypto</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

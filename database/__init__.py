@@ -1,0 +1,115 @@
+"""
+DATABASE PACKAGE
+================
+Peewee ORM models, database proxy, migrations, and connection management.
+"""
+
+from .backup import (
+    execute_database_backup,
+    get_backup_status,
+    list_backups,
+    prune_backups,
+    restore_database_backup,
+)
+from .connection import (
+    _seed_market_holidays,
+    atomic_write_retry,
+    get_db_instance,
+    initialize_db,
+    real_db,
+)
+from .migrations import run_auto_migrations
+from .models import (
+    AssetAiReport,
+    BackfillIntradayCheckpoint,
+    BaseModel,
+    BrokerOrder,
+    Client,
+    ClientApiKey,
+    ClientEntitlement,
+    Holiday,
+    HorusExecution,
+    LegacySignalOutcome,
+    Portfolio,
+    PortfolioDefaultState,
+    PortfolioSnapshot,
+    Position,
+    ProvisioningState,
+    PublishedSignalFollowUp,
+    PublishedSignalLifecycle,
+    PublishedSignalLifecycleEvent,
+    ScannerStrategyProfile,
+    Signal,
+    SignalAuditEvent,
+    SignalDelivery,
+    SignalDeskState,
+    SignalExecutionAttribution,
+    SignalGuardState,
+    SignalOutcome,
+    SignalRecommendation,
+    SignalRun,
+    SignalStateArchive,
+    SignalSuppressionLog,
+    SignalValidationRun,
+    SovereignState,
+    SubscriptionDelivery,
+    TickerStrategyMetrics,
+    Trade,
+    db,
+)
+
+__all__ = [
+    # Core proxy & connection
+    "db",
+    "real_db",
+    "BaseModel",
+    "get_db_instance",
+    "initialize_db",
+    "atomic_write_retry",
+    "run_auto_migrations",
+    "_seed_market_holidays",
+    # Backup & Disaster Recovery
+    "execute_database_backup",
+    "list_backups",
+    "prune_backups",
+    "restore_database_backup",
+    "get_backup_status",
+    # Portfolio
+    "Portfolio",
+    "PortfolioDefaultState",
+    "Position",
+    "Trade",
+    "BrokerOrder",
+    "PortfolioSnapshot",
+    # Signals
+    "Signal",
+    "BackfillIntradayCheckpoint",
+    "SignalRun",
+    "SignalRecommendation",
+    "SignalDelivery",
+    "SignalOutcome",
+    "PublishedSignalLifecycle",
+    "PublishedSignalLifecycleEvent",
+    "PublishedSignalFollowUp",
+    "HorusExecution",
+    "SignalExecutionAttribution",
+    "SignalValidationRun",
+    "TickerStrategyMetrics",
+    "LegacySignalOutcome",
+    "SignalSuppressionLog",
+    "SignalGuardState",
+    "SignalDeskState",
+    "SignalStateArchive",
+    # Market & System
+    "Holiday",
+    "ProvisioningState",
+    "SovereignState",
+    "ScannerStrategyProfile",
+    "AssetAiReport",
+    # Accounts & Clients
+    "Client",
+    "ClientApiKey",
+    "ClientEntitlement",
+    "SubscriptionDelivery",
+    "SignalAuditEvent",
+]

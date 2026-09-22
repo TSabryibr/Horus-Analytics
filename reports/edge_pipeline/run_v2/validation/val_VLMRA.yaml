@@ -1,0 +1,21 @@
+avg_pnl: !!python/object/apply:numpy._core.multiarray.scalar
+- !!python/object/apply:numpy.dtype
+  args:
+  - f8
+  - false
+  - true
+  state: !!python/tuple
+  - 3
+  - <
+  - null
+  - null
+  - null
+  - -1
+  - -1
+  - 0
+- !!binary |
+  AAAAAAAAEEA=
+edge_type: Whale Trap
+ticker: VLMRA
+total_historical_signals: 2
+win_rate: 100.0
