@@ -13,7 +13,13 @@ else:
     BUNDLE_DIR = os.path.abspath(".")
     BASE_DIR = os.path.abspath(".")
 
+APP_NAME: str = "Horus Analytics"
+APP_VERSION: str = "1.0.0"
+
 class AppSettings:
+    APP_NAME: str = APP_NAME
+    APP_VERSION: str = APP_VERSION
+
     @staticmethod
     def get_resource_path(relative_path):
         return os.path.join(BUNDLE_DIR, relative_path)
@@ -23,6 +29,8 @@ class AppSettings:
         return os.path.join(BASE_DIR, relative_path)
 
     def __init__(self):
+        self.APP_NAME = APP_NAME
+        self.APP_VERSION = APP_VERSION
         caller_env = dict(os.environ)
         load_dotenv(self.get_resource_path(".env"))
         load_dotenv(self.get_persistent_path(".env"), override=True)

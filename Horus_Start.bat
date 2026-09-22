@@ -1,6 +1,6 @@
 @echo off
 :: Quote the title to handle the pipe character correctly
-TITLE "THE INFINITY SCEPTER | HORUS ANALYTICS"
+TITLE "THE INFINITY SCEPTER | HORUS ANALYTICS v1.0"
 COLOR 0D
 
 :: Get the directory of the batch file and ensure we are in it
@@ -18,7 +18,7 @@ if exist ".venv313\Scripts\python.exe" (
 :MENU
 cls
 echo ======================================================================
-echo       THE INFINITY SCEPTER ^| HORUS ANALYTICS ^| ASGARDIAN EDITION
+echo       THE INFINITY SCEPTER ^| HORUS ANALYTICS v1.0 ^| ASGARDIAN EDITION
 echo ======================================================================
 echo   "I drink from the well of Mimir, and I drink from the fire of Muspelheim."
 echo ======================================================================

@@ -375,6 +375,8 @@ def _build_boot_status_payload(system_state: Optional[dict] = None) -> dict:
         system_state.update(durable_prov_fn())
 
     return {
+        "app_name": getattr(settings, "APP_NAME", "Horus Analytics"),
+        "app_version": getattr(settings, "APP_VERSION", "1.0.0"),
         "system_ready": system_state.get("status") == "READY",
         "message": system_state.get("message", "System Operational"),
         "pipeline_state": system_state.get("pipeline_state", "UNKNOWN"),

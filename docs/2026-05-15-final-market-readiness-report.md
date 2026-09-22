@@ -1,7 +1,12 @@
-# Horus Analytics II - Final Market Readiness Report
+# [HISTORICAL SNAPSHOT] Horus Analytics II - Final Market Readiness Report
 
-Date: 2026-05-15
-Workspace: `C:\Users\TSabr\Horus\Horus-Analytics-II`
+> [!WARNING]
+> **HISTORICAL ARCHIVE:** This document is a pre-release audit from **May 15, 2026** for a previous development milestone. All P0 and P1 gaps identified below (including auto-trading defaults, market hours guards, non-loopback auth, and feed stall handling) have been **fully resolved** in the current production release.
+>
+> **Current Official Status:** Please refer to [docs/2026-09-22-v1-production-release-certification.md](file:///c:/Users/TSabr/Horus/Horus-Analytics-v1/docs/2026-09-22-v1-production-release-certification.md) and [docs/HORUS_V1_SYSTEM_GUIDE.md](file:///c:/Users/TSabr/Horus/Horus-Analytics-v1/docs/HORUS_V1_SYSTEM_GUIDE.md).
+
+Date: 2026-05-15  
+Workspace: `C:\Users\TSabr\Horus\Horus-Analytics-II` (Historical Phase)  
 Review mode: source review, skill-guided trading review, focused verification checks.
 
 ## Executive Verdict

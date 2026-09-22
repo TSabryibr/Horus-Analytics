@@ -1,6 +1,9 @@
-# 2026-04-30 Market Session Log Analysis
+# [HISTORICAL INCIDENT REPORT] 2026-04-30 Market Session Log Analysis
 
-Source: [docs/Log.md](/abs/path/c:/Users/TSabr/Horus/Horus-Analytics-II/docs/Log.md)
+> [!NOTE]
+> **HISTORICAL POST-MORTEM (April 30, 2026):** This document is an incident post-mortem analyzing execution and deduplication bottlenecks during an April 2026 trading session on a legacy branch. All bugs noted herein (recommendation string errors, pre-close pricing staleness, dedup suppression) have been resolved in Horus Analytics v1.0.0.
+
+Source Log: `docs/Full_Log.md` (Legacy Workspace Reference: `Horus-Analytics-II/docs/Log.md`)
 
 ## Scope
 

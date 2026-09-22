@@ -1,147 +1,137 @@
-# Horus Trading System Analysis and Settings Integration
+﻿# Horus Analytics v1.0 — Trading System & Configuration Reference Dictionary
 
-This document analyzes the current Horus trading stack and maps strategy/risk filters to configurable settings.
-
-## 1) Brainstorming Lens
-- Core architecture is a dual-path system:
-  - **Signal generation**: breakout + VSA confirmation with optional Trickster mean-reversion setup.
-  - **Execution governance**: staged risk gates, portfolio constraints, and live guardrails.
-- Highest leverage improvements are settings visibility, threshold consistency, and duplicate guardrails between recommendation and execution.
-
-## 2) Trade Journal Lens
-- Trade lifecycle states observed:
-  - `ACTIVE` recommendation -> `PENDING_OPEN` (daily next-open) or direct open (intraday) -> `OPEN/UPDATED/SKIPPED/FAILED`.
-- Reasons are auditable through `details_json` and event logs, enabling post-mortem analysis for skipped setups (e.g., risk-reward, regime, heat, velocity, gap).
-
-## 3) Trading Expert Lens
-- **Primary setup**: momentum-breakout with liquidity/volume/RSI constraints and VSA-style validation.
-- **Secondary setup (Trickster)**: oversold rebound conditioned on RSI, EMA stretch in ATR units, candle turn, and participation.
-- Execution layer treats setup output as candidates, then applies institutional controls before capital deployment.
-
-## 4) Trading Wisdom Lens
-- Existing code already follows a strong principle: **signal idea != executable trade**.
-- Added settings reinforce this by making risk and quality thresholds explicit and testable, reducing hidden behavior.
-
-## 5) Trading Signals Lens
-- Signal scoring and confidence are now configurable minimums:
-  - Recommendation pipeline can drop weak candidates early.
-  - Execution validation re-checks thresholds to prevent accidental low-quality execution.
-
-## 6) Trade Accounting Lens
-- Costs are represented via commission/slippage assumptions and enforced in live risk contract checks.
-- Position sizing and realized-loss tracking work with these assumptions to preserve realistic PnL expectations.
-
-## 7) Trading Psychology Lens
-- Guardrails reduce impulsive overtrading:
-  - Daily trade velocity caps
-  - Portfolio heat ceilings
-  - Manual override lockout logic
-  - Regime and sector concentration controls
-
-## 8) Trading Visualization Lens
-- Dashboard/Settings now expose operationally critical controls that were previously hidden.
-- This improves operator comprehension of why trades are skipped and how to tune behavior safely.
-
-## 9) Trading Plan Generator Lens
-- The system supports plan-style operation:
-  - Signal quality floors
-  - Explicit risk-per-trade and minimum R:R
-  - Heat/velocity/sector caps
-  - Pending-open gap tolerance
-- These map cleanly to a repeatable daily playbook.
-
-## 10) Algorithmic Trading Lens
-- Execution flow is deterministic and layered:
-  1. Candidate build
-  2. Numeric geometry validation
-  3. Risk gates (WFA, enforcement, correlation, sector, velocity, regime)
-  4. Sizing and live risk contract
-  5. Persistence + notifications
-
-## 11) Risk Management Trading Lens
-- Risk policy now has explicit knobs for:
-  - `MAX_DAILY_TRADES`
-  - `MAX_PORTFOLIO_HEAT`
-  - `PENDING_ENTRY_MAX_GAP_PCT`
-  - `MIN_RISK_REWARD`
-  - `MIN_SIGNAL_SCORE` / `MIN_SIGNAL_CONFIDENCE`
-
-## 12) Backtesting Trading Strategies Lens
-- Backtest path uses normalized parameter payloads and non-zero cost assumptions.
-- Strategy parameter normalization now accepts the expanded risk/quality controls for consistent simulation inputs.
-
-## 13) Backtrader Lens
-- Current engine is a custom simulator/executor stack (not native Backtrader runtime), but it already models:
-  - Bar-by-bar indicators
-  - Pending next-open logic
-  - Position sizing and stop/target execution
-  - Portfolio-level constraints
+> **Document Type:** Diátaxis Reference (Information-Oriented)  
+> **Audience:** Quantitative Traders, Risk Officers, Platform Engineers  
+> **System Version:** Horus Analytics v1.0.0  
+> **Target Subsystem:** System Settings (`core/settings.py`), Risk Policy & Technical Indicators  
 
 ---
 
-## Trading Strategy Used (Current)
+## 1. System & Operational Configuration
 
-### Breakout + VSA Validation Flow
-1. Compute indicators (`ATR`, `RSI`, `EMA9`, relative volume, turnover, resistance/support).
-2. Build raw breakout candidates:
-   - liquidity (`MIN_TURNOVER`)
-   - relative volume (`VOL_SPIKE`)
-   - momentum (`MOMENTUM`)
-   - RSI zone (`RSI_MIN` to `RSI_MAX`)
-   - close above lookback resistance (`LOOKBACK`)
-3. Apply VSA-style validation (`volume_confirmation`, turnover floor, EFI confirmation, candle quality).
-4. Score candidate and derive trade geometry (fixed % or ATR exits).
+These parameters govern the underlying application lifecycle, network interfaces, market session timing, and autonomous watchdogs.
 
-### Trickster Mean-Reversion Flow
-1. Detect oversold and stretched conditions around EMA9 in ATR units.
-2. Require turning candle and minimum participation.
-3. Compute stop/targets via ATR or fixed stop fallback.
+### 1.1 Market Hours & EGX Session Timing
 
-### Regime Throttling
-- Scanner breadth classifies market to `BULLISH`, `CAUTIOUS`, or `BEARISH`.
-- Signal list is constrained by regime-specific limits and score gates.
+| Parameter | Type | Default | Description |
+| :--- | :---: | :---: | :--- |
+| `CONTINUOUS_TRADING_START_HHMM` | `str` | `"1000"` | Continuous trading start time in Cairo (`10:00 AM`). |
+| `CONTINUOUS_TRADING_END_HHMM_NORMAL` | `str` | `"1415"` | Continuous order matching end time for standard sessions (`02:15 PM`). |
+| `CLOSING_AUCTION_END_HHMM_NORMAL` | `str` | `"1425"` | Closing auction concluding time for standard sessions (`02:25 PM`). |
+| `MARKET_CLOSE_HHMM_NORMAL` | `str` | `"1430"` | Market close after Trade-at-Close window (`02:30 PM`). |
+| `CONTINUOUS_TRADING_END_HHMM_RAMADAN` | `str` | `"1315"` | Continuous trading end time during Ramadan (`01:15 PM`). |
+| `CLOSING_AUCTION_END_HHMM_RAMADAN` | `str` | `"1325"` | Closing auction end time during Ramadan (`01:25 PM`). |
+| `MARKET_CLOSE_HHMM_RAMADAN` | `str` | `"1330"` | Market close during Ramadan (`01:30 PM`). |
+| `EGX_RAMADAN_MODE` | `bool` | `False` | When `True`, shifts the session schedule forward by 1 hour. |
 
-### Execution/Risk Gates
-- Recommendation validation, WFA entry permission, trap/confluence controls, correlation, sector cap, velocity cap, regime check, live risk contract, and portfolio heat checks.
+### 1.2 Feed Watchdog & Stream Health
 
-### Backtest Assumptions
-- Capital + date window + parameter set + non-zero cost assumptions (`commission_pct`, `slippage_pct`), with holding-period and trade-level outcome calculations.
+| Parameter | Type | Default | Description |
+| :--- | :---: | :---: | :--- |
+| `FEED_WATCHDOG_ALERT_COOLDOWN_MINUTES` | `int` | `15` | Minimum cooldown between critical Telegram alerts to prevent notification flooding. |
+| `MAX_STALENESS_MINUTES` | `int` | `15` | Maximum bar staleness before an alert fires during continuous trading. |
+| `LOCAL_INTRADAY_DB_STALE_MINUTES` | `int` | `20` | Staleness threshold for local SQLite tick databases before fallback to secondary feeds. |
+| `LOCAL_INTRADAY_ALLOW_STALE_FALLBACK` | `bool` | `True` | Permits read access to cached bars if live stream disconnects. |
 
----
+### 1.3 Data Providers & Storage Paths
 
-## Settings-to-Engine Mapping
+| Parameter | Type | Default | Description |
+| :--- | :---: | :---: | :--- |
+| `LOCAL_FEED_PROVIDER` | `str` | `"AUTO"` | Priority feed source (`AUTO`, `CSV`, `MUBASHER_DB`, `DIRECTFN`, `METASTOCK_DAT`). |
+| `DATA_SOURCE_TYPE` | `str` | `"PARQUET"` | Core analytical lake format (`PARQUET` or `DUCKDB`). |
+| `METASTOCK_HISTORY_DIR` | `str` | *Mubasher History* | Directory path containing daily `.DAT` / history files. |
+| `METASTOCK_INTRADAY_DIR` | `str` | *Mubasher Intraday* | Directory path containing real-time intraday tick/bar files. |
 
-| Setting | Engine Use |
-|---|---|
-| `LOOKBACK` | Resistance window for breakout candidates |
-| `VOL_SPIKE` | Relative volume threshold for breakout |
-| `MOMENTUM` | Minimum move threshold |
-| `RSI_MIN` / `RSI_MAX` | Breakout RSI band |
-| `SL_PCT` / `TP1_PCT` | Fixed stop/target geometry |
-| `USE_ATR_EXITS`, `ATR_SL_MULTIPLIER`, `ATR_TP_MULTIPLIER` | ATR-based geometry |
-| `TRICKSTER_RSI_MAX`, `TRICKSTER_REL_VOL_MIN`, `TRICKSTER_STRETCH_ATR` | Trickster setup gating |
-| `MIN_TURNOVER` | Liquidity floor |
-| `MIN_SIGNAL_SCORE`, `MIN_SIGNAL_CONFIDENCE` | Recommendation and execution quality floors |
-| `MIN_RISK_REWARD` | Execution geometry quality check |
-| `RISK_PER_TRADE` | Sizing risk budget |
-| `MAX_DAILY_TRADES` | Velocity cap per portfolio/day |
-| `MAX_PORTFOLIO_HEAT` | Portfolio risk-exposure cap |
-| `PENDING_ENTRY_MAX_GAP_PCT` | Next-open gap skip threshold |
-| `SECTOR_LIMIT_ENABLED`, `MAX_PER_SECTOR` | Sector concentration gate |
-| `TRAILING_STOP_ENABLED`, `TRAILING_STOP_TYPE`, `TRAILING_STOP_VALUE` | Dynamic stop management |
-| `COMMISSION_PCT`, `SLIPPAGE_PCT` | Cost realism and live risk contract preconditions |
+### 1.4 Sovereign FX & Parallel USD Feed (RVU Arbitrage)
+
+| Parameter | Type | Default | Description |
+| :--- | :---: | :---: | :---: |
+| `PARALLEL_USD_CACHE_TTL_SECONDS` | `int` | `300` | Expiration time for cached implied USD/EGP parallel rate. |
+| `RVU_ADR_RATIO_COMI` | `float` | `1.0` | ADR-to-Ordinary share conversion ratio for CIB London (`CBKDq.L`). |
+| `DEFAULT_FALLBACK_USD_EGP_RATE` | `float` | `50.0` | Conservative fallback rate if cross-arbitrage feeds are unreachable. |
 
 ---
 
-## Filter Checkpoint Matrix
+## 2. Institutional Risk & Live Execution Guardrails
 
-| Stage | Filter | Failing Outcome |
-|---|---|---|
-| Candidate build | Breakout + liquidity/volume/momentum/RSI | Candidate not produced |
-| VSA validation | Volume/turnover/EFI/candle quality | Candidate not produced |
-| Recommendation build | `MIN_SIGNAL_SCORE`, `MIN_SIGNAL_CONFIDENCE` | Recommendation not persisted |
-| Execution validation | Numeric geometry + `MIN_RISK_REWARD` + min score/confidence | `SKIPPED` execution |
-| Risk gate | WFA/trap/confluence/correlation/sector/velocity/regime | `SKIPPED` execution |
-| Pending open | `PENDING_ENTRY_MAX_GAP_PCT` | `SKIPPED` with gap reason |
-| Portfolio-level | Heat check vs `MAX_PORTFOLIO_HEAT` | Execution blocked |
-| Live contract | Loss/drawdown/correlation/liquidity/cost checks | `SKIPPED` execution |
+These controls enforce capital preservation and prevent rogue algorithmic execution.
+
+| Parameter | Type | Default | Description |
+| :--- | :---: | :---: | :--- |
+| `AUTO_TRADE_ENABLED` | `bool` | `False` | Master switch for live order placement. Fails closed (`False`). |
+| `LIVE_ARM_GUARD_ENABLED` | `bool` | `True` | When `True`, requires explicit operator arming per trading day (`expires_daily`). |
+| `LIVE_REQUIRE_DAILY_PLAN_CONFIRMATION` | `bool` | `True` | Blocks arming until the operator formally confirms the daily trading plan. |
+| `LIVE_MAX_DAILY_LOSS_PCT` | `float` | `3.0` | Maximum portfolio drawdown within a session. Reaching 3.0% triggers an instant lockout. |
+| `LIVE_MAX_CONSECUTIVE_LOSSES` | `int` | `4` | Maximum consecutive stop-loss executions before live order submission is halted. |
+| `MAX_PORTFOLIO_HEAT` | `float` | `0.15` | Total open portfolio risk ceiling (sum of open stop-loss risks $\le$ 15% of equity). |
+| `RISK_PER_TRADE` | `float` | `0.01` | Sizing risk budget per position (default: 1.0% of portfolio equity). |
+| `MAX_DAILY_TRADES` | `int` | `5` | Maximum number of new positions permitted in a single trading session. |
+| `SECTOR_LIMIT_ENABLED` | `bool` | `True` | Enforces sector concentration limits. |
+| `MAX_PER_SECTOR` | `int` | `2` | Maximum concurrent positions allowed in the same economic sector. |
+
+---
+
+## 3. Technical Strategy & Candidate Filters
+
+Parameters controlling the Breakout + VSA and Trickster Mean-Reversion engines.
+
+| Parameter | Type | Default | Description |
+| :--- | :---: | :---: | :--- |
+| `LOOKBACK` | `int` | `20` | Resistance window (in bars) for detecting high-watermark breakouts. |
+| `VOL_SPIKE` | `float` | `1.5` | Minimum relative volume ratio ($\ge 150\%$ of 20-bar average) to confirm a breakout. |
+| `MOMENTUM` | `float` | `0.02` | Minimum bar percentage gain ($+2.0\%$) to qualify as a breakout candle. |
+| `RSI_MIN` | `float` | `45.0` | Lower bound for breakout RSI filter. |
+| `RSI_MAX` | `float` | `75.0` | Upper bound for breakout RSI filter (avoids buying extreme overbought tops). |
+| `MIN_TURNOVER` | `float` | `500000.0` | Minimum bar turnover in EGP (500k EGP) to filter illiquid penny stocks. |
+| `MIN_SIGNAL_SCORE` | `float` | `65.0` | Minimum composite multi-factor score required to emit a trade recommendation. |
+| `MIN_SIGNAL_CONFIDENCE` | `float` | `0.70` | Minimum statistical confidence score ($70\%$) required for live trade candidate build. |
+| `MIN_RISK_REWARD` | `float` | `1.8` | Minimum acceptable Risk-to-Reward ratio ($\ge 1.8:1$). |
+| `PENDING_ENTRY_MAX_GAP_PCT` | `float` | `2.5` | Skips execution if the next-day market open gaps up by $> 2.5\%$. |
+
+---
+
+## 4. Exit Rules & Dynamic Order Management
+
+| Parameter | Type | Default | Description |
+| :--- | :---: | :---: | :--- |
+| `USE_ATR_EXITS` | `bool` | `True` | When `True`, calculates stop-loss and take-profit using ATR volatility multiples. |
+| `ATR_SL_MULTIPLIER` | `float` | `1.5` | Stop-loss distance ($1.5 \times \text{ATR}_{14}$). |
+| `ATR_TP_MULTIPLIER` | `float` | `3.0` | Take-profit distance ($3.0 \times \text{ATR}_{14}$). |
+| `SL_PCT` | `float` | `0.03` | Fixed stop-loss fallback ($3.0\%$) when ATR exits are disabled. |
+| `TP1_PCT` | `float` | `0.06` | Fixed take-profit fallback ($6.0\%$) when ATR exits are disabled. |
+| `TRAILING_STOP_ENABLED` | `bool` | `True` | Activates trailing stop management once Position reaches $+1.5\text{R}$. |
+| `TRAILING_STOP_TYPE` | `str` | `"CHANDELIER"` | Trailing stop calculation engine (`CHANDELIER`, `PARABOLIC_SAR`, `PERCENT`). |
+| `TRAILING_STOP_VALUE` | `float` | `2.0` | Trailing multiplier or percentage distance. |
+
+---
+
+## 5. Execution Pipeline Filter Checkpoint Flow
+
+Every potential trade must survive all 8 sequential gates before capital is allocated:
+
+```
+[Candlestick Data Ingest]
+       │
+       ▼  Gate 1: Liquidity & Technical Filter (Turnover ≥ 500k, RelVol ≥ 1.5, RSI 45-75)
+[Breakout Candidate]
+       │
+       ▼  Gate 2: VSA Validation (Effort vs Result, Volume confirmation, Candle close strength)
+[Valid Candidate]
+       │
+       ▼  Gate 3: Quality Scoring (Score ≥ 65.0, Confidence ≥ 0.70, R:R ≥ 1.8)
+[Recommendation Built]
+       │
+       ▼  Gate 4: Pre-Execution Risk Gates (WFA permission, Whale-Trap check, Bear-Trap confluence)
+[Permitted Candidate]
+       │
+       ▼  Gate 5: Portfolio Constraints (Max daily trades ≤ 5, Sector cap ≤ 2, Heat ≤ 15%)
+[Sized Order]
+       │
+       ▼  Gate 6: Live Execution Guard (Armed today? Plan confirmed? Lockout inactive?)
+[Live Order Submission]
+       │
+       ▼  Gate 7: Next-Open Gap Gate (Gap-up ≤ 2.5%)
+[Execution Fill]
+       │
+       ▼  Gate 8: Dynamic Exits (ATR trailing stop & profit targets)
+```

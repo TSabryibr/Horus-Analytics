@@ -15,7 +15,7 @@ from routes import (
 )
 
 logger = logging.getLogger("horus.api")
-API_VERSION = "1.3.0"
+API_VERSION = "1.0.0"
 
 
 def register_routes(app: FastAPI) -> None:

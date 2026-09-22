@@ -1,6 +1,9 @@
-# 2026-04-30 Session Log Annotated Report
+# [HISTORICAL INCIDENT REPORT] 2026-04-30 Session Log Annotated Report
 
-Source log: [Log.md](c:/Users/TSabr/Horus/Horus-Analytics-II/docs/Log.md)
+> [!NOTE]
+> **HISTORICAL POST-MORTEM (April 30, 2026):** This document is an incident post-mortem investigating signal broadcast dedup and pricing context anomalies during an April 2026 trading session on a legacy branch. All architectural defects identified herein have been resolved in Horus Analytics v1.0.0.
+
+Source Log: `docs/Full_Log.md` (Legacy Workspace Reference: `Horus-Analytics-II/docs/Log.md`)
 
 ## Scope
 
