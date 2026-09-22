@@ -47,10 +47,16 @@ class MarketFeedWatchdog:
         """
         now = TimeUtils.now()
         market_open = bool(settings.is_market_open())
+        session_phase = getattr(
+            settings,
+            "get_market_session_phase",
+            lambda dt=None: "CONTINUOUS_TRADING" if market_open else "CLOSED",
+        )(now)
 
-        if not market_open:
+        if not market_open or session_phase == "CLOSED":
             return {
                 "is_market_open": False,
+                "session_phase": "CLOSED",
                 "stalled": False,
                 "status": "MARKET_CLOSED",
                 "reason": "Market is closed",
@@ -70,6 +76,7 @@ class MarketFeedWatchdog:
         if not timestamps:
             return {
                 "is_market_open": True,
+                "session_phase": session_phase,
                 "stalled": True,
                 "status": "NO_DATA",
                 "reason": "No intraday bars found for realm",
@@ -83,6 +90,7 @@ class MarketFeedWatchdog:
         if not valid_ts:
             return {
                 "is_market_open": True,
+                "session_phase": session_phase,
                 "stalled": True,
                 "status": "NO_VALID_DATA",
                 "reason": "No valid timestamps found in intraday bars",
@@ -101,19 +109,90 @@ class MarketFeedWatchdog:
         elif latest_ts.tzinfo is None and now_ts.tzinfo is not None:
             latest_ts = latest_ts.tz_localize(now_ts.tzinfo)
 
-        lag_seconds = max(0.0, (now_ts - latest_ts).total_seconds())
-        lag_minutes = round(lag_seconds / 60.0, 2)
-        stalled = lag_minutes > max_stall_minutes
+        if session_phase == "CLOSING_AUCTION":
+            # 14:15 - 14:25: Closing Auction & Adjust Session
+            # Continuous matching stops at 14:15. System collects orders to calculate
+            # the official closing price based on supply/demand volume, rather than matching
+            # individual trades immediately. The feed is not stalled if bars reached continuous close.
+            cont_end_h, cont_end_m = getattr(settings, "get_continuous_trading_end_hour_minute", lambda: (14, 15))()
+            cont_end_dt = now.replace(hour=cont_end_h, minute=cont_end_m, second=0, microsecond=0)
+            cont_end_ts = pd.Timestamp(cont_end_dt)
+            if latest_ts.tzinfo is not None and cont_end_ts.tzinfo is None:
+                cont_end_ts = cont_end_ts.tz_localize(latest_ts.tzinfo)
+            elif latest_ts.tzinfo is None and cont_end_ts.tzinfo is not None:
+                cont_end_ts = cont_end_ts.tz_localize(None)
 
-        status_str = "STALLED" if stalled else "HEALTHY"
-        reason = (
-            f"Feed stalled: newest bar is {lag_minutes}m old (threshold: {max_stall_minutes}m)"
-            if stalled
-            else f"Feed healthy: lag is {lag_minutes}m"
-        )
+            lag_to_cont_close_sec = max(0.0, (cont_end_ts - latest_ts).total_seconds())
+            lag_to_cont_close_min = round(lag_to_cont_close_sec / 60.0, 2)
+
+            if lag_to_cont_close_min <= max_stall_minutes or latest_ts >= cont_end_ts:
+                stalled = False
+                status_str = "CLOSING_AUCTION"
+                cont_start_str = getattr(settings, "CONTINUOUS_TRADING_END_TIME", "14:15")
+                auct_end_str = getattr(settings, "CLOSING_AUCTION_END_TIME", "14:25")
+                reason = (
+                    f"Closing Auction & Adjust Session in progress ({cont_start_str} - {auct_end_str}). "
+                    f"Continuous matching paused; latest bar captured at continuous close ({latest_ts.strftime('%H:%M:%S')})."
+                )
+                lag_minutes = lag_to_cont_close_min
+            else:
+                stalled = True
+                status_str = "STALLED"
+                reason = (
+                    f"Feed stalled before auction cutoff: newest bar is {lag_to_cont_close_min}m "
+                    f"prior to continuous close (threshold: {max_stall_minutes}m)"
+                )
+                lag_minutes = lag_to_cont_close_min
+
+        elif session_phase == "TRADE_AT_CLOSE":
+            # 14:25 - 14:30: Trade-at-Close Session
+            # Trading resumes exclusively at the newly calculated fixed closing price.
+            # Volume is sparse/fixed; continuous stream is not expected.
+            cont_end_h, cont_end_m = getattr(settings, "get_continuous_trading_end_hour_minute", lambda: (14, 15))()
+            cont_end_dt = now.replace(hour=cont_end_h, minute=cont_end_m, second=0, microsecond=0)
+            cont_end_ts = pd.Timestamp(cont_end_dt)
+            if latest_ts.tzinfo is not None and cont_end_ts.tzinfo is None:
+                cont_end_ts = cont_end_ts.tz_localize(latest_ts.tzinfo)
+            elif latest_ts.tzinfo is None and cont_end_ts.tzinfo is not None:
+                cont_end_ts = cont_end_ts.tz_localize(None)
+
+            lag_to_cont_close_sec = max(0.0, (cont_end_ts - latest_ts).total_seconds())
+            lag_to_cont_close_min = round(lag_to_cont_close_sec / 60.0, 2)
+
+            if lag_to_cont_close_min <= max_stall_minutes or latest_ts >= cont_end_ts:
+                stalled = False
+                status_str = "TRADE_AT_CLOSE"
+                auct_end_str = getattr(settings, "CLOSING_AUCTION_END_TIME", "14:25")
+                mkt_end_str = getattr(settings, "MARKET_END_TIME", "14:30")
+                reason = (
+                    f"Trade-at-Close session in progress ({auct_end_str} - {mkt_end_str}). "
+                    f"Executions exclusively at fixed closing price."
+                )
+                lag_minutes = lag_to_cont_close_min
+            else:
+                stalled = True
+                status_str = "STALLED"
+                reason = (
+                    f"Feed stalled before auction cutoff: newest bar is {lag_to_cont_close_min}m "
+                    f"prior to continuous close (threshold: {max_stall_minutes}m)"
+                )
+                lag_minutes = lag_to_cont_close_min
+
+        else:
+            lag_seconds = max(0.0, (now_ts - latest_ts).total_seconds())
+            lag_minutes = round(lag_seconds / 60.0, 2)
+            stalled = lag_minutes > max_stall_minutes
+
+            status_str = "STALLED" if stalled else "HEALTHY"
+            reason = (
+                f"Feed stalled: newest bar is {lag_minutes}m old (threshold: {max_stall_minutes}m)"
+                if stalled
+                else f"Feed healthy: lag is {lag_minutes}m"
+            )
 
         return {
             "is_market_open": True,
+            "session_phase": session_phase,
             "stalled": stalled,
             "status": status_str,
             "reason": reason,
@@ -197,8 +276,10 @@ class MarketFeedWatchdog:
 
         if not in_cooldown:
             cls._last_alert_time = now
+            phase_str = recheck.get("session_phase", "CONTINUOUS_TRADING")
             msg = (
                 f"🚨 *CRITICAL: MARKET FEED STALLED*\n"
+                f"Session: *{phase_str}*\n"
                 f"Market is OPEN but intraday feed has stalled for *{recheck.get('lag_minutes', 'N/A')} minutes*.\n"
                 f"Monitored Tickers: {recheck.get('tickers_monitored', 0)}\n"
                 f"Latest Bar: {recheck.get('latest_timestamp', 'Unknown')}\n"

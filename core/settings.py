@@ -75,9 +75,18 @@ class AppSettings:
         self.PIPELINE_STALE_SOUND_ALERT_COOLDOWN_SEC = max(0, int(os.getenv("PIPELINE_STALE_SOUND_ALERT_COOLDOWN_SEC", "600") or 600))
 
         # Session auto-detection depends on the active market schedule.
+        # EGX Session Timeline:
+        # 10:00 - 14:15: Continuous Trading Session (Continuous order matching)
+        # 14:15 - 14:25: Closing Auction & Adjust Session (Order collection & price calculation)
+        # 14:25 - 14:30: Trade-at-Close Session (Trades at fixed closing price)
+        # 14:30+: Market Closed
         self.MARKET_START_HHMM_NORMAL = os.getenv("MARKET_START_HHMM_NORMAL", "1000").strip()
+        self.CONTINUOUS_TRADING_END_HHMM_NORMAL = os.getenv("CONTINUOUS_TRADING_END_HHMM_NORMAL", "1415").strip()
+        self.CLOSING_AUCTION_END_HHMM_NORMAL = os.getenv("CLOSING_AUCTION_END_HHMM_NORMAL", "1425").strip()
         self.MARKET_END_HHMM_NORMAL = os.getenv("MARKET_END_HHMM_NORMAL", "1430").strip()
         self.MARKET_START_HHMM_RAMADAN = os.getenv("MARKET_START_HHMM_RAMADAN", "1000").strip()
+        self.CONTINUOUS_TRADING_END_HHMM_RAMADAN = os.getenv("CONTINUOUS_TRADING_END_HHMM_RAMADAN", "1315").strip()
+        self.CLOSING_AUCTION_END_HHMM_RAMADAN = os.getenv("CLOSING_AUCTION_END_HHMM_RAMADAN", "1325").strip()
         self.MARKET_END_HHMM_RAMADAN = os.getenv("MARKET_END_HHMM_RAMADAN", "1330").strip()
         self.RAMADAN_MODE = os.getenv("RAMADAN_MODE", "0").strip().lower() in {"1", "true", "yes"}
         
@@ -281,11 +290,19 @@ class AppSettings:
     def _active_market_start(self) -> str:
         return self.MARKET_START_HHMM_RAMADAN if self.RAMADAN_MODE else self.MARKET_START_HHMM_NORMAL
 
+    def _active_continuous_end(self) -> str:
+        return self.CONTINUOUS_TRADING_END_HHMM_RAMADAN if self.RAMADAN_MODE else self.CONTINUOUS_TRADING_END_HHMM_NORMAL
+
+    def _active_auction_end(self) -> str:
+        return self.CLOSING_AUCTION_END_HHMM_RAMADAN if self.RAMADAN_MODE else self.CLOSING_AUCTION_END_HHMM_NORMAL
+
     def _active_market_end(self) -> str:
         return self.MARKET_END_HHMM_RAMADAN if self.RAMADAN_MODE else self.MARKET_END_HHMM_NORMAL
 
     def _refresh_market_times(self):
         self.MARKET_START_TIME = self._hhmm_to_colon(self._active_market_start())
+        self.CONTINUOUS_TRADING_END_TIME = self._hhmm_to_colon(self._active_continuous_end())
+        self.CLOSING_AUCTION_END_TIME = self._hhmm_to_colon(self._active_auction_end())
         self.MARKET_END_TIME = self._hhmm_to_colon(self._active_market_end())
 
     @staticmethod
@@ -297,9 +314,84 @@ class AppSettings:
         hhmm = self._active_market_start().zfill(4)
         return int(hhmm[:2]), int(hhmm[2:])
 
+    def get_continuous_trading_end_hour_minute(self) -> tuple[int, int]:
+        hhmm = self._active_continuous_end().zfill(4)
+        return int(hhmm[:2]), int(hhmm[2:])
+
+    def get_closing_auction_end_hour_minute(self) -> tuple[int, int]:
+        hhmm = self._active_auction_end().zfill(4)
+        return int(hhmm[:2]), int(hhmm[2:])
+
     def get_market_close_hour_minute(self) -> tuple[int, int]:
         hhmm = self._active_market_end().zfill(4)
         return int(hhmm[:2]), int(hhmm[2:])
+
+    def get_market_session_phase(self, ref_dt: datetime.datetime | None = None) -> str:
+        """
+        Returns the current EGX market session phase:
+        - "CLOSED": Outside market trading days/hours, weekend, or holiday
+        - "PRE_MARKET": On a trading day before market open (< 10:00)
+        - "CONTINUOUS_TRADING": 10:00 - 14:15 (continuous order matching in real-time)
+        - "CLOSING_AUCTION": 14:15 - 14:25 (closing price discovery, continuous matching paused)
+        - "TRADE_AT_CLOSE": 14:25 - 14:30 (executions exclusively at fixed closing price)
+        """
+        from core import TimeUtils
+        if getattr(TimeUtils, '_MARKET_OVERRIDE', False):
+            return "CONTINUOUS_TRADING"
+        now = ref_dt or TimeUtils.now()
+        current_time = now.strftime("%H:%M")
+        start = self.MARKET_START_TIME
+        cont_end = self.CONTINUOUS_TRADING_END_TIME
+        auct_end = self.CLOSING_AUCTION_END_TIME
+        mkt_end = self.MARKET_END_TIME
+
+        if ref_dt is not None:
+            if now.weekday() in self.MARKET_WEEKEND or self._is_db_holiday(now.date()):
+                return "CLOSED"
+            if current_time < start:
+                return "PRE_MARKET"
+            elif start <= current_time < cont_end:
+                return "CONTINUOUS_TRADING"
+            elif cont_end <= current_time < auct_end:
+                return "CLOSING_AUCTION"
+            elif auct_end <= current_time <= mkt_end:
+                return "TRADE_AT_CLOSE"
+            else:
+                if self.is_market_open():
+                    return "CONTINUOUS_TRADING"
+                return "CLOSED"
+
+        if not self.is_market_open():
+            if (
+                now.weekday() not in self.MARKET_WEEKEND
+                and not self._is_db_holiday(now.date())
+                and current_time < start
+            ):
+                return "PRE_MARKET"
+            return "CLOSED"
+
+        if current_time < start:
+            return "PRE_MARKET"
+        elif start <= current_time < cont_end:
+            return "CONTINUOUS_TRADING"
+        elif cont_end <= current_time < auct_end:
+            return "CLOSING_AUCTION"
+        elif auct_end <= current_time <= mkt_end:
+            return "TRADE_AT_CLOSE"
+        else:
+            return "CONTINUOUS_TRADING"
+
+    def is_continuous_trading(self, ref_dt: datetime.datetime | None = None) -> bool:
+        """True if and only if market is in active Continuous Trading (10:00 - 14:15)."""
+        return self.get_market_session_phase(ref_dt) == "CONTINUOUS_TRADING"
+
+    def is_closing_auction(self, ref_dt: datetime.datetime | None = None) -> bool:
+        """True if market is in Closing Auction & Adjust session (14:15 - 14:25)."""
+        return self.get_market_session_phase(ref_dt) == "CLOSING_AUCTION"
+
+    def is_trade_at_close(self, ref_dt: datetime.datetime | None = None) -> bool:
+        """True if market is in Trade-at-Close session (14:25 - 14:30)."""
+        return self.get_market_session_phase(ref_dt) == "TRADE_AT_CLOSE"
 
     def is_market_open(self):
         from core import TimeUtils

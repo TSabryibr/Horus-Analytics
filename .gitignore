@@ -28,7 +28,8 @@ ENV/
 
 # Data & Database
 *.db
-data/
+/data/
+!core/data/
 history/
 intraday/
 *.csv

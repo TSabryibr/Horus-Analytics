@@ -374,3 +374,142 @@ def test_watchdog_check_and_heal_alert_and_cooldown(monkeypatch):
     res3 = MarketFeedWatchdog.check_and_heal(max_stall_minutes=5.0, alert_cooldown_minutes=15.0)
     assert res3["action"] == "alert_sent"
     assert len(broadcasted_alerts) == 2
+
+
+# --------------------------------------------------------------------------
+# 6. EGX Session Timeline & Closing Auction Tests
+# --------------------------------------------------------------------------
+
+def test_egx_market_session_phases():
+    """Verify session phases: Continuous (10:00-14:15), Auction (14:15-14:25), Trade-at-Close (14:25-14:30), Closed."""
+    sunday = datetime.date(2026, 9, 27)  # A Sunday (trading day)
+
+    # Pre-market: 09:30
+    dt_pre = datetime.datetime.combine(sunday, datetime.time(9, 30))
+    assert settings.get_market_session_phase(dt_pre) == "PRE_MARKET"
+    assert settings.is_continuous_trading(dt_pre) is False
+
+    # Continuous trading: 10:00, 11:30, 14:14
+    dt_open = datetime.datetime.combine(sunday, datetime.time(10, 0))
+    dt_mid = datetime.datetime.combine(sunday, datetime.time(11, 30))
+    dt_cont_end = datetime.datetime.combine(sunday, datetime.time(14, 14))
+    for dt in [dt_open, dt_mid, dt_cont_end]:
+        assert settings.get_market_session_phase(dt) == "CONTINUOUS_TRADING"
+        assert settings.is_continuous_trading(dt) is True
+        assert settings.is_closing_auction(dt) is False
+        assert settings.is_trade_at_close(dt) is False
+
+    # Closing Auction & Adjust Session: 14:15, 14:22, 14:24
+    dt_auc_start = datetime.datetime.combine(sunday, datetime.time(14, 15))
+    dt_auc_mid = datetime.datetime.combine(sunday, datetime.time(14, 22))
+    dt_auc_end = datetime.datetime.combine(sunday, datetime.time(14, 24))
+    for dt in [dt_auc_start, dt_auc_mid, dt_auc_end]:
+        assert settings.get_market_session_phase(dt) == "CLOSING_AUCTION"
+        assert settings.is_continuous_trading(dt) is False
+        assert settings.is_closing_auction(dt) is True
+        assert settings.is_trade_at_close(dt) is False
+
+    # Trade-at-Close Session: 14:25, 14:28, 14:30
+    dt_tac_start = datetime.datetime.combine(sunday, datetime.time(14, 25))
+    dt_tac_mid = datetime.datetime.combine(sunday, datetime.time(14, 28))
+    dt_tac_end = datetime.datetime.combine(sunday, datetime.time(14, 30))
+    for dt in [dt_tac_start, dt_tac_mid, dt_tac_end]:
+        assert settings.get_market_session_phase(dt) == "TRADE_AT_CLOSE"
+        assert settings.is_continuous_trading(dt) is False
+        assert settings.is_closing_auction(dt) is False
+        assert settings.is_trade_at_close(dt) is True
+
+    # Closed / Post-market: 14:31, 15:00
+    dt_closed = datetime.datetime.combine(sunday, datetime.time(14, 31))
+    assert settings.get_market_session_phase(dt_closed) == "CLOSED"
+
+    # Weekend (Friday)
+    friday = datetime.date(2026, 9, 25)
+    dt_weekend = datetime.datetime.combine(friday, datetime.time(11, 0))
+    assert settings.get_market_session_phase(dt_weekend) == "CLOSED"
+
+
+def test_watchdog_closing_auction_not_stalled(monkeypatch):
+    """
+    During Closing Auction (14:15 - 14:25), continuous order matching has stopped.
+    A feed with newest bar at 14:15:00 at 14:22 must NOT be flagged as STALLED.
+    """
+    sunday = datetime.date(2026, 9, 27)
+    time_1422 = datetime.datetime.combine(sunday, datetime.time(14, 22, 0))
+    bar_1415 = pd.Timestamp(datetime.datetime.combine(sunday, datetime.time(14, 15, 0)))
+
+    monkeypatch.setattr(TimeUtils, "now", lambda: time_1422)
+    monkeypatch.setattr(settings, "is_market_open", lambda: True)
+    monkeypatch.setattr(
+        "data_engine.intraday_store.get_latest_timestamps",
+        lambda realm="EGX": {"COMI": bar_1415, "FWRY": bar_1415},
+    )
+
+    status = MarketFeedWatchdog.check_feed_heartbeat(max_stall_minutes=5.0)
+    assert status["is_market_open"] is True
+    assert status["session_phase"] == "CLOSING_AUCTION"
+    assert status["stalled"] is False
+    assert status["status"] == "CLOSING_AUCTION"
+    assert "Closing Auction" in status["reason"]
+
+    # check_and_heal should take NO action and send NO alerts
+    alerts = []
+    monkeypatch.setattr("core.AlertManager.broadcast_alert", lambda msg, **kwargs: alerts.append(msg))
+    heal_res = MarketFeedWatchdog.check_and_heal(max_stall_minutes=5.0)
+    assert heal_res["action"] == "none"
+    assert heal_res["healed"] is False
+    assert len(alerts) == 0
+
+
+def test_watchdog_trade_at_close_not_stalled(monkeypatch):
+    """
+    During Trade-at-Close (14:25 - 14:30), trading resumes at fixed close price.
+    A feed with newest bar at 14:15:00 at 14:27 must NOT be flagged as STALLED.
+    """
+    sunday = datetime.date(2026, 9, 27)
+    time_1427 = datetime.datetime.combine(sunday, datetime.time(14, 27, 0))
+    bar_1415 = pd.Timestamp(datetime.datetime.combine(sunday, datetime.time(14, 15, 0)))
+
+    monkeypatch.setattr(TimeUtils, "now", lambda: time_1427)
+    monkeypatch.setattr(settings, "is_market_open", lambda: True)
+    monkeypatch.setattr(
+        "data_engine.intraday_store.get_latest_timestamps",
+        lambda realm="EGX": {"COMI": bar_1415},
+    )
+
+    status = MarketFeedWatchdog.check_feed_heartbeat(max_stall_minutes=5.0)
+    assert status["is_market_open"] is True
+    assert status["session_phase"] == "TRADE_AT_CLOSE"
+    assert status["stalled"] is False
+    assert status["status"] == "TRADE_AT_CLOSE"
+
+    alerts = []
+    monkeypatch.setattr("core.AlertManager.broadcast_alert", lambda msg, **kwargs: alerts.append(msg))
+    heal_res = MarketFeedWatchdog.check_and_heal(max_stall_minutes=5.0)
+    assert heal_res["action"] == "none"
+    assert len(alerts) == 0
+
+
+def test_watchdog_auction_with_prior_stall_flags_stalled(monkeypatch):
+    """
+    If the feed stalled long before continuous close (e.g. at 13:00) and never
+    caught up, the watchdog during closing auction must still identify the stall.
+    """
+    sunday = datetime.date(2026, 9, 27)
+    time_1422 = datetime.datetime.combine(sunday, datetime.time(14, 22, 0))
+    bar_1300 = pd.Timestamp(datetime.datetime.combine(sunday, datetime.time(13, 0, 0)))
+
+    monkeypatch.setattr(TimeUtils, "now", lambda: time_1422)
+    monkeypatch.setattr(settings, "is_market_open", lambda: True)
+    monkeypatch.setattr(
+        "data_engine.intraday_store.get_latest_timestamps",
+        lambda realm="EGX": {"COMI": bar_1300},
+    )
+
+    status = MarketFeedWatchdog.check_feed_heartbeat(max_stall_minutes=5.0)
+    assert status["is_market_open"] is True
+    assert status["session_phase"] == "CLOSING_AUCTION"
+    assert status["stalled"] is True
+    assert status["status"] == "STALLED"
+    assert "Feed stalled before auction cutoff" in status["reason"]
+

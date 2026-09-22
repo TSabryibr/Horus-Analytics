@@ -38,10 +38,12 @@ def stop_live_feed():
 def get_live_status():
     """Get the current status of the live data feed."""
     market_open = settings.is_market_open()
+    session_phase = getattr(settings, "get_market_session_phase", lambda: "CLOSED")()
     return {
         "status": "success",
         "running": LiveFeedManager.is_running(),
         "market_open": market_open,
+        "session_phase": session_phase,
         "session_mode": settings.SESSION_MODE,
         "last_update": LiveFeedManager.get_last_update_time(),
         "stats": LiveFeedManager.get_session_stats(),
@@ -49,7 +51,21 @@ def get_live_status():
             "start": settings.MARKET_START_TIME,
             "end": settings.MARKET_END_TIME,
             "weekend_days": ["Friday", "Saturday"],
-        }
+        },
+        "session_timeline": {
+            "continuous_trading": {
+                "start": getattr(settings, "MARKET_START_TIME", "10:00"),
+                "end": getattr(settings, "CONTINUOUS_TRADING_END_TIME", "14:15"),
+            },
+            "closing_auction": {
+                "start": getattr(settings, "CONTINUOUS_TRADING_END_TIME", "14:15"),
+                "end": getattr(settings, "CLOSING_AUCTION_END_TIME", "14:25"),
+            },
+            "trade_at_close": {
+                "start": getattr(settings, "CLOSING_AUCTION_END_TIME", "14:25"),
+                "end": getattr(settings, "MARKET_END_TIME", "14:30"),
+            },
+        },
     }
 
 

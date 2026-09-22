@@ -96,6 +96,13 @@ class StreamHealthWatchdog:
                 now = time.time()
                 stale_duration = now - self.last_tick_time
 
+                # Only check for feed stall during active continuous trading session
+                is_continuous = getattr(settings, "is_continuous_trading", lambda dt=None: True)()
+                if not is_continuous:
+                    self.last_tick_time = now
+                    time.sleep(1.0)
+                    continue
+
                 # If feed is stale and warning is not active (or 5 minutes passed since last alert)
                 if stale_duration > self.max_stale_seconds:
                     if not self.warning_active or (now - self.last_warning_dispatch > 300):

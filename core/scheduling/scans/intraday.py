@@ -36,6 +36,14 @@ def scheduled_intraday_scan():
     if not settings.is_market_open():
         _get_logger().info("[Scheduler] INTRADAY scan skipped: market is closed.")
         return
+    if not getattr(settings, "is_continuous_trading", lambda: True)():
+        phase = getattr(settings, "get_market_session_phase", lambda: "CLOSED")()
+        cont_end = getattr(settings, "CONTINUOUS_TRADING_END_TIME", "14:15")
+        _get_logger().info(
+            f"[Scheduler] INTRADAY scan skipped: market is in {phase} session "
+            f"(continuous trading ended at {cont_end})."
+        )
+        return
     pipeline_obj = _resolve_scheduling_dispatch("_pipeline", _pipeline)
     if not pipeline_obj.pipeline_allows_active_ops("scheduled_intraday_scan"):
         _get_logger().info("[Scheduler] INTRADAY scan skipped: pipeline gate blocked.")
