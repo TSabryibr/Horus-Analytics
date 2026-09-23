@@ -7,13 +7,20 @@ COLOR 0D
 set "PROJECT_ROOT=%~dp0"
 cd /d "%PROJECT_ROOT%"
 
-:: Check for Python in venv first, then system
+:: Check for Python in venv with valid dependencies, otherwise fallback to system python
 set "PY_CMD=python"
 if exist ".venv313\Scripts\python.exe" (
-    set "PY_CMD=.venv313\Scripts\python.exe"
+    .venv313\Scripts\python.exe -c "import duckdb, fastapi" >nul 2>&1
+    if not errorlevel 1 (
+        set "PY_CMD=.venv313\Scripts\python.exe"
+    )
 ) else if exist ".venv\Scripts\python.exe" (
-    set "PY_CMD=.venv\Scripts\python.exe"
+    .venv\Scripts\python.exe -c "import duckdb, fastapi" >nul 2>&1
+    if not errorlevel 1 (
+        set "PY_CMD=.venv\Scripts\python.exe"
+    )
 )
+
 
 :MENU
 cls
